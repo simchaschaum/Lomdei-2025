@@ -1,0 +1,57 @@
+/* ...existing code... */
+
+.page-container {
+  display: flex;
+  justify-content: center;
+}
+
+.landing-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.lomdei-logo {
+  width: 65vw;
+  max-width: 65%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.landing-title-container h1 {
+  font-size: 20pt;
+  font-family: 'TT Wellingtons', Arial, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  width: 55vw;
+  max-width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.landing-logo {
+  width: 65vw;
+  max-width: 65%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+body, #root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url('./images/Lomdei Home page background.png') no-repeat center center fixed;
+  background-size: cover;
+  z-index: 0;
+}
+/* ...existing code... */
