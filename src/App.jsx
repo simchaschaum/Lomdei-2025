@@ -1,9 +1,11 @@
 
 import './App.css';
+import Header from './Header';
 
 function App() {
   return (
     <div className="page-container">
+      <Header />
       <div className="landing-title-container">
         <div className="main-logo">
           {/* Replace the src below with your logo image path */}

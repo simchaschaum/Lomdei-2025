@@ -1,0 +1,41 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 5rem;
+  background-color: #dcf5fb;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.header-logo {
+  height: 4rem;
+  margin-left: 2rem;
+  margin-right: 0;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 66vw;
+  height: 100%;
+  margin-left: auto;
+}
+.header-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 500;
+  padding: 0 1.5rem;
+  transition: color 0.2s;
+}
+.header-link:hover {
+  color: #0077a3;
+}
