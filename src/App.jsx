@@ -1,6 +1,6 @@
-
 import './App.css';
 import Header from './Header';
+import CounterNumber from './CounterNumber';
 
 function App() {
   return (
@@ -78,9 +78,9 @@ function App() {
             <div className="global-impact-content">
               <p className="impact-subtitle">See Lomdei's reach across the world.</p>
               <div className="impact-counters">
-                <div className="counter"><span className="counter-number">74</span> <span className="counter-label">schools</span></div>
-                <div className="counter"><span className="counter-number">300</span> <span className="counter-label">teachers</span></div>
-                <div className="counter"><span className="counter-number">8500</span> <span className="counter-label">students</span></div>
+                <div className="counter"><CounterNumber end={74} /> <span className="counter-label">schools</span></div>
+                <div className="counter"><CounterNumber end={300} /> <span className="counter-label">teachers</span></div>
+                <div className="counter"><CounterNumber end={8500} /> <span className="counter-label">students</span></div>
               </div>
               <div className="reviews-carousel"></div>
             </div>
