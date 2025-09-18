@@ -1,0 +1,172 @@
+.mastered-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.mastered-main {
+  margin-top: 9rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#platform-intro {
+  background: url('./images/Lomdei Background 2.png') no-repeat center center;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#platform-features.mastered-main {
+  margin-top: 0;
+  background: none;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+.mastered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  position: relative;
+  bottom: 20%;
+}
+.mastered-title {
+  font-family: 'Glacial Indifference', Arial, sans-serif;
+  font-size: 6.94rem; /* 111pt = 6.94rem */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  margin-bottom: 2rem;
+}
+.mastered-subtitle {
+  font-family: 'TT Wellingtons', Arial, sans-serif;
+  font-size: 2.19rem; /* 35pt = 2.19rem */
+  margin-bottom: 1.5rem;
+}
+.mastered-desc {
+  font-size: 1.225rem; /* 19.6pt = 1.225rem */
+  margin-bottom: 0;
+}
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+.feature-icon {
+  width: 100px;
+  height: auto;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+  .mastered-page,
+  .page-container.mastered-page {
+    display: block;
+    min-height: unset;
+    height: auto;
+    width: 100%;
+  }
+  .mastered-main {
+    margin-top: 6rem;
+    height: auto;
+    min-height: unset;
+    background-size: cover;
+    width: 100%;
+  }
+  .mastered-content {
+    width: 95%;
+  }
+  .mastered-title {
+    font-size: 2.8rem;
+  }
+  .mastered-subtitle{
+    font-size: 1.2rem;
+  }
+  .mastered-desc {
+    font-size: 1rem;
+  }
+  .site-footer {
+    position: relative;
+    margin-top: 0;
+  }
+  #platform-intro {
+    background: url('./images/Lomdei Background 2.png') no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .mastered-main {
+    background: none;
+  }
+}
+#platform-features {
+    background-color: #f0f1f5;
+}
+.page-container.mastered-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.page-container.mastered-page > main {
+  flex-shrink: 0;
+}
+.site-footer {
+  margin-top: 0;
+  width: 100vw;
+  min-height: 14rem;
+  background: #9bc4d9;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.feature-title {
+    font-size: 18pt;
+}
+.feature-desc, .impact-desc {
+    font-size: 16pt;
+}
+.blue-background {
+    background-color: #0f90ce;
+    padding: 2rem 4rem 2rem 0;
+
+}
+.impact-main {
+  margin-top: 8rem;
+}
+.impact-title {
+    margin-left: 50%;
+}
+.impact-text {
+  background-color: #f0f1f5;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.impact-desc {
+  margin-left: 50%;
+}
+@media (max-width: 900px) {
+    .impact-title {
+        margin-left: 0;
+        text-align: center;
+    }
+    .impact-desc {
+        margin-left: 0;
+        text-align: center;
+    }
+}
