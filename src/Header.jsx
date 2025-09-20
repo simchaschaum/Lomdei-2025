@@ -17,7 +17,7 @@ const Header = ({ imagesPath }) => {
         <Link to="/tailored" className="header-link">Coaching</Link>
         <Link to="/mastered" className="header-link">Digital Platform</Link>
         <a href="#title-dollars" className="header-link">Title Dollars</a>
-        <a href="#contact" className="header-link">Contact</a>
+        <Link to="/contact" className="header-link">Contact</Link>
         <a href="#login" className="header-link">LOG IN</a>
       </nav>
       <button className="hamburger-menu" onClick={handleMenuToggle} aria-label="Open menu">
@@ -33,7 +33,7 @@ const Header = ({ imagesPath }) => {
           <Link to="/tailored" className="mobile-menu-link" onClick={handleMenuClose}>Coaching</Link>
           <Link to="/mastered" className="mobile-menu-link" onClick={handleMenuClose}>Digital Platform</Link>
           <a href="#title-dollars" className="mobile-menu-link" onClick={handleMenuClose}>Title Dollars</a>
-          <a href="#contact" className="mobile-menu-link" onClick={handleMenuClose}>Contact</a>
+          <Link to="/contact" className="mobile-menu-link" onClick={handleMenuClose}>Contact</Link>
           <a href="#login" className="mobile-menu-link" onClick={handleMenuClose}>LOG IN</a>
         </div>
       )}
