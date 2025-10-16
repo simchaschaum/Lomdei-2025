@@ -18,42 +18,42 @@ const TailoreEd = () => {
             <h2 className="mastered-subtitle">PROGRAM FEATURES</h2>
             <ul className="features-list">
               <li className="feature-item">
-                <img className="feature-icon" src='/Lomdei-2025/images/logo-book.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-book.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>RELEVANT INSTRUCTIONAL MODELS</b></span><br />
                   <span className="feature-desc">Delivering innovative teaching strategies in a culturally sensitive and relevant way to Jewish schools.</span>
                 </span>
               </li>
               <li className="feature-item">
-                <img className="feature-icon" src='/Lomdei-2025/images/logo-book.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-book.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>NURTURING PROFESSIONAL EXCELLENCE</b></span><br />
                   <span className="feature-desc">Providing schools with a guided framework to effectively create an ongoing growth minded culture in professional development and coaching.</span>
                 </span>
               </li>
               <li className="feature-item">
-                <img className="feature-icon" src='/Lomdei-2025/images/logo-location.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-location.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>STRATEGIC COACHING PARTNERSHIPS</b></span><br />
                   <span className="feature-desc">Matching our diverse team of coaches with teachers to maximize success.</span>
                 </span>
               </li>
               <li className="feature-item">
-                <img className="feature-icon" src='/Lomdei-2025/images/logo-phone.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-phone.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>REACHING EVERY CHILD</b></span><br/>
                   <span className="feature-desc">Personalized platform support all year round.</span>
                 </span>
               </li>
               <li className="feature-item">
-                <img className="feature-icon" src='/Lomdei-2025/images/logo-star.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-star.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>COLLABORATIVE GOAL SETTING</b></span><br />
                   <span className="feature-desc">Facilitating a professional partnership with school leadership and teachers to create clearly defined and achievable goals.</span>
                 </span>
               </li>
               <li className="feature-item">
-                <img className="feature-icon" src='/Lomdei-2025/images/logo-medal.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-medal.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>LEARNING TOGETHER</b></span><br />
                   <span className="feature-desc">Creating a professional learning community of like minded educators who will share, learn and collaborate.</span>

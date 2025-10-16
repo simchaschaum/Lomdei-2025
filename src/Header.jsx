@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="site-header">
       <Link to="/" className="header-logo-link" onClick={handleMenuClose}>
-        <img alt='lomdei logo' src={'/Lomdei-2025/images/New Lomdei Logo.png'} className="header-logo" />
+        <img alt='lomdei logo' src={'/images/New Lomdei Logo.png'} className="header-logo" />
       </Link>
       <nav className="header-nav">
         <Link to="/tailored" className="header-link">Coaching</Link>

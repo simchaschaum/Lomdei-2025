@@ -18,7 +18,7 @@ main.contact-main {
   align-items: flex-start;
 }
 #contact-intro {
-  background: url('/Lomdei-2025/images/Lomdei Background 2.png') no-repeat center center;
+  background: url('/images/Lomdei Background 2.png') no-repeat center center;
   background-size: 100% 100%;
   min-height: 25vh;
   display: flex;
@@ -87,7 +87,7 @@ main.contact-main {
     margin-top: 0;
   }
   #contact-intro {
-    background: url('/Lomdei-2025/images/Lomdei Background 2.png') no-repeat center center;
+    background: url('/images/Lomdei Background 2.png') no-repeat center center;
     background-size: 100% 100%;
   }
   .contact-main {
