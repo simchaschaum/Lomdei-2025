@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="footer-columns">
         <div className="footer-col left-col">
-          <img src="/images/New Lomdei Logo.png" alt="Lomdei Logo" className="footer-logo" />
+          <img src="/Lomdei-2025/images/New Lomdei Logo.png" alt="Lomdei Logo" className="footer-logo" />
           <div className="footer-text">©2025 Lomdei <br />
         All Rights Reserved
         </div>
