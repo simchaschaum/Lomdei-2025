@@ -124,7 +124,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: url('./images/Lomdei Home page background.png') no-repeat center center fixed;
+  background: url('/Lomdei-2025/images/Lomdei Home page background.png') no-repeat center center fixed;
   background-size: 100% 100%;
 }
 .transparent-section h2 {
@@ -226,6 +226,9 @@
   max-width: 100vw;
   text-align: center;
   font-family: 'Montserrat', Arial, sans-serif;
+  /* Center main-logo horizontally and vertically within landing-title-container */
+  background: url('/Lomdei-2025/images/Lomdei Home page background.png') no-repeat center center;
+  background-size: cover;
 }
 /* Center main-logo horizontally and vertically within landing-title-container */
 .main-logo {
@@ -399,7 +402,7 @@ body, #root {
   width: 100vw;
   margin: 0;
   padding: 0;
-  background: url('./images/Lomdei Home page background.png') no-repeat center center;
+  background: url('/Lomdei-2025/images/Lomdei Home page background.png') no-repeat center center fixed;
   background-size: cover;
   z-index: 0;
 }

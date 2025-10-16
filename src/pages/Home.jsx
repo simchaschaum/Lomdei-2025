@@ -7,7 +7,7 @@ function HomePage() {
       <div className="landing-title-container">
         <div className="main-logo">
           <img
-            src="./src/images/New Lomdei Logo.png"
+            src="/Lomdei-2025/images/New Lomdei Logo.png"
             alt="Lomdei Logo"
             className="lomdei-logo"
           />
@@ -24,7 +24,7 @@ function HomePage() {
               <div className="program-title">MasterED</div>
               <div className="program-icon">
                 <span role="img" aria-label="mastered" style={{fontSize: '4rem'}}>
-                  <img src="./src/images/MasterEd-Icon.png" alt="MasterEd Book Icon" />
+                  <img src="/Lomdei-2025/public/images/MasterEd-Icon.PNG" alt="MasterEd Book Icon" />
                 </span>
               </div>
               <div className="program-desc">Powerful <b>platform</b>, seamlessly simple.</div>
@@ -33,7 +33,7 @@ function HomePage() {
               <div className="program-title">TailorED</div>
               <div className="program-icon">
                 <span role="img" aria-label="tailored" style={{fontSize: '4rem'}}>
-                  <img src="./src/images/TailorED-Icon.png" alt="TailorED Lightbulb Icon" />
+                  <img src="/Lomdei-2025/public/images/TailorEd-Icon.PNG" alt="TailorED Lightbulb Icon" />
                 </span>
               </div>
               <div className="program-desc">Customized <b>coaching</b>, transformative teaching.</div>
@@ -42,7 +42,7 @@ function HomePage() {
               <div className="program-title">StandardED</div>
               <div className="program-icon">
                 <span role="img" aria-label="standard" style={{fontSize: '4rem'}}>
-                  <img src="./src/images/StandardED-Icon.png" alt="StandardED Star Icon" />
+                  <img src="/Lomdei-2025/public/images/StandardED-Icon.PNG" alt="StandardED Star Icon" />
                 </span>
               </div>
               <div className="program-desc">Coming soon!</div>
@@ -52,17 +52,17 @@ function HomePage() {
       </div>
       <div className="lower-section">
         <div className="transparent-section">
-          <h2 className="programs-title"><img src="./src/images/government-icon.png" alt="Government Grants Icon" />GOVERNMENT GRANTS</h2>
+          <h2 className="programs-title"><img src="/Lomdei-2025/images/government-icon.png" alt="Government Grants Icon" />GOVERNMENT GRANTS</h2>
           <div className="government-grants-content">
             <div className="grants-boxes">
               <div className="grant-box">
-                <img className='star-icon' alt='star-icon' src='./src/images/star-icon.png'></img>
+                <img className='star-icon' alt='star-icon' src='/Lomdei-2025/public/images/star-icon.png'></img>
                 <h4>Title IIA Funding</h4>
                 <p>Federal grants available for professional development and educational coaching programs.</p>
                 <p>Title IIA dollars can be used towards professional development & coaching and for the MasterED Learning Platform</p>
               </div>
               <div className="grant-box">
-                <img className='star-icon' alt='star-icon' src='./src/images/star-icon.png'></img>
+                <img className='star-icon' alt='star-icon' src='/Lomdei-2025/public/images/star-icon.png'></img>
                 <h4>Title IV Funding</h4>
                 <p>Federal grants specifically designated for educational software and technology solutions.</p>
                 <p>Title IV dollars (Software) can be used towards the Lomdei Learning Platform</p>
@@ -72,7 +72,7 @@ function HomePage() {
           </div>
         </div>
         <div className="global-impact-section">
-          <h2 className="programs-title"><img src="./src/images/globe-icon.png" alt="Global Impact Icon" />GLOBAL IMPACT</h2>
+          <h2 className="programs-title"><img src="/Lomdei-2025/images/globe-icon.png" alt="Global Impact Icon" />GLOBAL IMPACT</h2>
           <div className="global-impact-content">
             <p className="impact-subtitle">See Lomdei's reach across the world.</p>
             <div className="impact-counters">

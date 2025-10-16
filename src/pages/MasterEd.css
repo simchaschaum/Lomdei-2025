@@ -12,7 +12,7 @@
   justify-content: center;
 }
 #platform-intro {
-  background: url('./images/Lomdei Background 2.png') no-repeat center center;
+  background: url('/Lomdei-2025/images/Lomdei Background 2.png') no-repeat center center;
   background-size: 100% 100%;
   min-height: 100vh;
   display: flex;
@@ -105,7 +105,7 @@
     margin-top: 0;
   }
   #platform-intro {
-    background: url('./images/Lomdei Background 2.png') no-repeat center center;
+    background: url('/Lomdei-2025/images/Lomdei Background 2.png') no-repeat center center;
     background-size: 100% 100%;
   }
   .mastered-main {

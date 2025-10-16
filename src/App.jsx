@@ -9,17 +9,15 @@ import HomePage from './pages/Home';
 import TailoreEd from './pages/TailoreEd';
 import Contact from './pages/Contact';
 
-const imagesPath = './src/images';
-
 function App() {
   return (
     <Router>
-      <Header imagesPath={imagesPath} />
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/mastered" element={<MasterEd imagesPath={imagesPath} />} />
-        <Route path="/tailored" element={<TailoreEd imagesPath={imagesPath} />} />
-        <Route path="/contact" element={<Contact imagesPath={imagesPath} />} />
+        <Route path="/mastered" element={<MasterEd />} />
+        <Route path="/tailored" element={<TailoreEd />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
