@@ -15,10 +15,10 @@ const Footer = () => {
           <div className="footer-center-section">
             <div className="footer-center-text">Proud Partners</div>
             <div className="footer-center-logo">
-              <img src="/images/Mayberg Logo.png" alt="Mayberg Logo" className="footer-partner-logo" />
+              <img src="./images/Mayberg Logo.png" alt="Mayberg Logo" className="footer-partner-logo" />
             </div>
             <div className="footer-center-logo">
-              <img src="/images/Deep Logo.png" alt="Deep Logo" className="footer-partner-logo" />
+              <img src="./images/Deep Logo.png" alt="Deep Logo" className="footer-partner-logo" />
             </div>
           </div>
         </div>
