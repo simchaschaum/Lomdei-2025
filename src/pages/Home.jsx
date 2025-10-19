@@ -7,7 +7,7 @@ function HomePage() {
       <div className="landing-title-container">
         <div className="main-logo">
           <img
-            src="./images/New Lomdei Logo.png"
+            src="images/New Lomdei Logo.png"
             alt="Lomdei Logo"
             className="lomdei-logo"
           />
