@@ -18,42 +18,42 @@ const MasterEd = () => {
             <h2 className="mastered-subtitle">PLATFORM FEATURES</h2>
             <ul className="features-list">
               <li className="feature-item">
-                <img className="feature-icon" src='/public/images/logo-book.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-book.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>LIBRARY ACCESS</b></span><br />
                   <span className="feature-desc">Largest, Online, Limudei Kodesh library of skill building activities in all subjects.</span>
                 </span>
               </li>
               <li className="feature-item">
-                <img className="feature-icon" src='/public/images/logo-recycling.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-recycling.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>CUSTOMIZABLE CONTENT</b></span><br />
                   <span className="feature-desc">Fully editable materials, allowing for personalization and differentiation of existing online assignments.</span>
                 </span>
               </li>
               <li className="feature-item">
-                <img className="feature-icon" src='/public/images/logo-location.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-location.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>ANALYTICAL DATA</b></span><br />
                   <span className="feature-desc">Real time rich data for targeted teaching.</span>
                 </span>
               </li>
               <li className="feature-item">
-                <img className="feature-icon" src='/public/images/logo-phone.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-phone.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>ONGOING SUPPORT</b></span><br />
                   <span className="feature-desc">Personalized platform support all year round.</span>
                 </span>
               </li>
               <li className="feature-item">
-                <img className="feature-icon" src='/public/images/logo-star.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-star.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>CUSTOM MATERIALS</b></span><br />
                   <span className="feature-desc">Collaborate with schools to create school-specific content to utilize on the platform.</span>
                 </span>
               </li>
               <li className="feature-item">
-                <img className="feature-icon" src='/public/images/logo-medal.png' alt="icon" />
+                <img className="feature-icon" src='/images/logo-medal.png' alt="icon" />
                 <span className="feature-text">
                   <span className="feature-title"><b>KOSHER DEVICES</b></span><br />
                   <span className="feature-desc">Sensitive to school’s technology policies.</span>

@@ -24,7 +24,7 @@ function HomePage() {
               <div className="program-title">MasterED</div>
               <div className="program-icon">
                 <span role="img" aria-label="mastered" style={{fontSize: '4rem'}}>
-                  <img src="/public/images/MasterEd-Icon.PNG" alt="MasterEd Book Icon" />
+                  <img src="/images/MasterEd-Icon.PNG" alt="MasterEd Book Icon" />
                 </span>
               </div>
               <div className="program-desc">Powerful <b>platform</b>, seamlessly simple.</div>
@@ -33,7 +33,7 @@ function HomePage() {
               <div className="program-title">TailorED</div>
               <div className="program-icon">
                 <span role="img" aria-label="tailored" style={{fontSize: '4rem'}}>
-                  <img src="/public/images/TailorEd-Icon.PNG" alt="TailorED Lightbulb Icon" />
+                  <img src="/images/TailorEd-Icon.PNG" alt="TailorED Lightbulb Icon" />
                 </span>
               </div>
               <div className="program-desc">Customized <b>coaching</b>, transformative teaching.</div>
@@ -42,7 +42,7 @@ function HomePage() {
               <div className="program-title">StandardED</div>
               <div className="program-icon">
                 <span role="img" aria-label="standard" style={{fontSize: '4rem'}}>
-                  <img src="/public/images/StandardED-Icon.PNG" alt="StandardED Star Icon" />
+                  <img src="images/StandardEd-Icon.PNG" alt="StandardED Star Icon" />
                 </span>
               </div>
               <div className="program-desc">Coming soon!</div>
@@ -56,13 +56,13 @@ function HomePage() {
           <div className="government-grants-content">
             <div className="grants-boxes">
               <div className="grant-box">
-                <img className='star-icon' alt='star-icon' src='/public/images/star-icon.png'></img>
+                <img className='star-icon' alt='star-icon' src='/images/star-icon.png'></img>
                 <h4>Title IIA Funding</h4>
                 <p>Federal grants available for professional development and educational coaching programs.</p>
                 <p>Title IIA dollars can be used towards professional development & coaching and for the MasterED Learning Platform</p>
               </div>
               <div className="grant-box">
-                <img className='star-icon' alt='star-icon' src='/public/images/star-icon.png'></img>
+                <img className='star-icon' alt='star-icon' src='/images/star-icon.png'></img>
                 <h4>Title IV Funding</h4>
                 <p>Federal grants specifically designated for educational software and technology solutions.</p>
                 <p>Title IV dollars (Software) can be used towards the Lomdei Learning Platform</p>
