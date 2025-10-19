@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="footer-columns">
         <div className="footer-col left-col">
-          <img src="images/New Lomdei Logo.png" alt="Lomdei Logo" className="footer-logo" />
+          <img src="/images/New Lomdei Logo.png" alt="Lomdei Logo" className="footer-logo" />
           <div className="footer-text">©2025 Lomdei <br />
         All Rights Reserved
         </div>
@@ -15,10 +15,10 @@ const Footer = () => {
           <div className="footer-center-section">
             <div className="footer-center-text">Proud Partners</div>
             <div className="footer-center-logo">
-              <img src="./images/Mayberg Logo.png" alt="Mayberg Logo" className="footer-partner-logo" />
+              <img src="/images/Mayberg Logo.png" alt="Mayberg Logo" className="footer-partner-logo" />
             </div>
             <div className="footer-center-logo">
-              <img src="./images/Deep Logo.png" alt="Deep Logo" className="footer-partner-logo" />
+              <img src="/images/Deep Logo.png" alt="Deep Logo" className="footer-partner-logo" />
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ function HomePage() {
       <div className="landing-title-container">
         <div className="main-logo">
           <img
-            src="images/New Lomdei Logo.png"
+            src="/images/New Lomdei Logo.png"
             alt="Lomdei Logo"
             className="lomdei-logo"
           />
@@ -24,7 +24,7 @@ function HomePage() {
               <div className="program-title">MasterED</div>
               <div className="program-icon">
                 <span role="img" aria-label="mastered" style={{fontSize: '4rem'}}>
-                  <img src="./images/MasterEd-Icon.PNG" alt="MasterEd Book Icon" />
+                  <img src="/images/MasterEd-Icon.PNG" alt="MasterEd Book Icon" />
                 </span>
               </div>
               <div className="program-desc">Powerful <b>platform</b>, seamlessly simple.</div>
@@ -33,7 +33,7 @@ function HomePage() {
               <div className="program-title">TailorED</div>
               <div className="program-icon">
                 <span role="img" aria-label="tailored" style={{fontSize: '4rem'}}>
-                  <img src="./images/TailorEd-Icon.PNG" alt="TailorED Lightbulb Icon" />
+                  <img src="/images/TailorEd-Icon.PNG" alt="TailorED Lightbulb Icon" />
                 </span>
               </div>
               <div className="program-desc">Customized <b>coaching</b>, transformative teaching.</div>
@@ -42,7 +42,7 @@ function HomePage() {
               <div className="program-title">StandardED</div>
               <div className="program-icon">
                 <span role="img" aria-label="standard" style={{fontSize: '4rem'}}>
-                  <img src="images/StandardEd-Icon.PNG" alt="StandardED Star Icon" />
+                  <img src="/images/StandardEd-Icon.PNG" alt="StandardED Star Icon" />
                 </span>
               </div>
               <div className="program-desc">Coming soon!</div>
@@ -52,7 +52,7 @@ function HomePage() {
       </div>
       <div className="lower-section">
         <div className="transparent-section">
-          <h2 className="programs-title"><img src="./images/government-icon.png" alt="Government Grants Icon" />GOVERNMENT GRANTS</h2>
+          <h2 className="programs-title"><img src="/images/government-icon.png" alt="Government Grants Icon" />GOVERNMENT GRANTS</h2>
           <div className="government-grants-content">
             <div className="grants-boxes">
               <div className="grant-box">
@@ -72,7 +72,7 @@ function HomePage() {
           </div>
         </div>
         <div className="global-impact-section">
-          <h2 className="programs-title"><img src="./images/globe-icon.png" alt="Global Impact Icon" />GLOBAL IMPACT</h2>
+          <h2 className="programs-title"><img src="/images/globe-icon.png" alt="Global Impact Icon" />GLOBAL IMPACT</h2>
           <div className="global-impact-content">
             <p className="impact-subtitle">See Lomdei's reach across the world.</p>
             <div className="impact-counters">
