@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MasterEd</title>
+  <link rel="stylesheet" href="src/pages/MasterEd.css">
+  <link rel="stylesheet" href="src/Header.css">
+  <link rel="stylesheet" href="src/Footer.css">
+</head>
+<body>
+  <div id="header"></div>
+  <div class="page-container mastered-page">
+    <main class="mastered-main" id="platform-intro">
+      <div class="mastered-content">
+        <h1 class="mastered-title">MasterEd</h1>
+        <h3 class="mastered-subtitle">Powerful platform, seamlessly simple.</h3>
+        <p class="mastered-desc">MasterED is a powerful Limudei Kodesh educational digital tool focused on <b>skill building</b>, formative and summative <b>assessments</b> and rich <b>data</b> tracking for both teachers and students.</p>
+      </div>
+    </main>
+    <main class="mastered-main" id="platform-features">
+      <div class="mastered-features">
+        <h2 class="mastered-subtitle">PLATFORM FEATURES</h2>
+        <ul class="features-list">
+          <li class="feature-item">
+            <img class="feature-icon" src="public/images/logo-book.png" alt="icon" />
+            <span class="feature-text">
+              <span class="feature-title"><b>LIBRARY ACCESS</b></span><br />
+              <span class="feature-desc">Largest, Online, Limudei Kodesh library of skill building activities in all subjects.</span>
+            </span>
+          </li>
+          <li class="feature-item">
+            <img class="feature-icon" src="public/images/logo-recycling.png" alt="icon" />
+            <span class="feature-text">
+              <span class="feature-title"><b>CUSTOMIZABLE CONTENT</b></span><br />
+              <span class="feature-desc">Fully editable materials, allowing for personalization and differentiation of existing online assignments.</span>
+            </span>
+          </li>
+          <li class="feature-item">
+            <img class="feature-icon" src="public/images/logo-location.png" alt="icon" />
+            <span class="feature-text">
+              <span class="feature-title"><b>ANALYTICAL DATA</b></span><br />
+              <span class="feature-desc">Real time rich data for targeted teaching.</span>
+            </span>
+          </li>
+          <li class="feature-item">
+            <img class="feature-icon" src="public/images/logo-phone.png" alt="icon" />
+            <span class="feature-text">
+              <span class="feature-title"><b>ONGOING SUPPORT</b></span><br />
+              <span class="feature-desc">Personalized platform support all year round.</span>
+            </span>
+          </li>
+          <li class="feature-item">
+            <img class="feature-icon" src="public/images/logo-star.png" alt="icon" />
+            <span class="feature-text">
+              <span class="feature-title"><b>AND MORE...</b></span><br />
+              <span class="feature-desc">Contact us to learn more about our platform features.</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <div id="footer"></div>
+  <script>
+    // Dynamically load header and footer HTML
+    function importSection(id, url, selector) {
+      fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const temp = document.createElement('div');
+          temp.innerHTML = html;
+          const el = temp.querySelector(selector);
+          if (el) document.getElementById(id).appendChild(el);
+        });
+    }
+    importSection('header', 'header.html', 'header');
+    importSection('footer', 'footer.html', 'footer');
+  </script>
+</body>
+</html>

@@ -54,18 +54,7 @@
 .counter {
   line-height: 1.1;
 }
-.counter {
-  /* The number and the label are together, so style the label inside .counter */
-}
-.counter {
-  /* If you want to style the label separately, use a span or class in JSX. For now, set font-size for words after number. */
-}
-.counter {
-  /* If the counter text is split, you can use a span for the label. Otherwise, set font-size for the whole text. */
-}
-.counter {
-  /* For now, set font-size for the whole text. If you want to split, update JSX. */
-}
+
 /* Contact box styling */
  .contact-box {
   width: 20%;
@@ -124,7 +113,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: url('/images/Lomdei Home page background.png') no-repeat center center fixed;
+  background: url('../public/images/Lomdei Home page background.png') no-repeat center center fixed;
   background-size: 100% 100%;
 }
 .transparent-section h2 {
@@ -227,7 +216,7 @@
   text-align: center;
   font-family: 'Montserrat', Arial, sans-serif;
   /* Center main-logo horizontally and vertically within landing-title-container */
-  background: url('/images/Lomdei Home page background.png') no-repeat center center;
+  background: url('../public/images/Lomdei Home page background.png') no-repeat center center;
   background-size: cover;
 }
 /* Center main-logo horizontally and vertically within landing-title-container */
@@ -397,12 +386,12 @@
 }
 
 
-body, #root {
-  height: 100vh;
-  width: 100vw;
+body {
+  min-height: 100vh;
+  min-width: 100vw;
   margin: 0;
   padding: 0;
-  background: url('/images/Lomdei Home page background.png') no-repeat center center fixed;
+  background: url('../public/images/Lomdei Home page background.png') no-repeat center center fixed;
   background-size: cover;
   z-index: 0;
 }

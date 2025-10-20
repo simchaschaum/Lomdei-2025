@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="src/App.css">
+  <link rel="stylesheet" href="src/Header.css">
+  <link rel="stylesheet" href="src/Footer.css">
+</head>
+<body>
+  <div id="header"></div>
+  <div class="page-container">
+    <div class="landing-title-container">
+      <div class="main-logo">
+  <img src="public/images/New Lomdei Logo.png" alt="Lomdei Logo" class="lomdei-logo" />
+        <h1>Lomdei bridges tradition and innovation, empowering educators to create personalized Jewish learning experiences accessible to all students.</h1>
+      </div>
+    </div>
+    <div class="white-section">
+      <div class="white-section-content">
+        <h2 class="programs-title">OUR PROGRAMS</h2>
+        <div class="programs-grid">
+          <a class="program-square" href="#program1">
+            <div class="program-title">MasterED</div>
+            <div class="program-icon">
+              <span style="font-size: 4rem;">
+                <img src="public/images/MasterEd-Icon.PNG" alt="MasterEd Book Icon" />
+              </span>
+            </div>
+            <div class="program-desc">Powerful <b>platform</b>, seamlessly simple.</div>
+          </a>
+          <a class="program-square" href="#program2">
+            <div class="program-title">TailorED</div>
+            <div class="program-icon">
+              <span style="font-size: 4rem;">
+                <img src="public/images/TailorEd-Icon.PNG" alt="TailorED Lightbulb Icon" />
+              </span>
+            </div>
+            <div class="program-desc">Customized <b>coaching</b>, transformative teaching.</div>
+          </a>
+          <a class="program-square" href="#program3">
+            <div class="program-title">StandardED</div>
+            <div class="program-icon">
+              <span style="font-size: 4rem;">
+                <img src="public/images/StandardEd-Icon.PNG" alt="StandardED Star Icon" />
+              </span>
+            </div>
+            <div class="program-desc">Coming soon!</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="lower-section">
+      <div class="transparent-section">
+        <h2 class="programs-title"><img src="public/images/government-icon.png" alt="Government Grants Icon" />GOVERNMENT GRANTS</h2>
+        <div class="government-grants-content">
+          <div class="grants-boxes">
+            <div class="grant-box">
+              <img class="star-icon" alt="star-icon" src="public/images/star-icon.png" />
+              <h4>Title IIA Funding</h4>
+              <p>Federal grants available for professional development and educational coaching programs.</p>
+              <p>Title IIA dollars can be used towards professional development &amp; coaching and for the MasterED Learning Platform</p>
+            </div>
+            <div class="grant-box">
+              <img class="star-icon" alt="star-icon" src="public/images/star-icon.png" />
+              <h4>Title IV Funding</h4>
+              <p>Federal grants specifically designated for educational software and technology solutions.</p>
+              <p>Title IV dollars (Software) can be used towards the Lomdei Learning Platform</p>
+            </div>
+          </div>
+          <a class="contact-box" href="/contact"><b>Contact</b> us for more information.</a>
+        </div>
+      </div>
+      <div class="global-impact-section">
+        <h2 class="programs-title"><img src="public/images/globe-icon.png" alt="Global Impact Icon" />GLOBAL IMPACT</h2>
+        <div class="global-impact-content">
+          <p class="impact-subtitle">See Lomdei's reach across the world.</p>
+          <div class="impact-counters">
+            <div class="counter"><span class="counter-number">074</span> <span class="counter-label">schools</span></div>
+            <div class="counter"><span class="counter-number">300</span> <span class="counter-label">teachers</span></div>
+            <div class="counter"><span class="counter-number">8500</span> <span class="counter-label">students</span></div>
+          </div>
+          <div class="reviews-carousel"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+  <script>
+    // Dynamically load header and footer HTML
+    function importSection(id, url, selector) {
+      fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          // Extract only the relevant tag (header/footer) from the HTML file
+          const temp = document.createElement('div');
+          temp.innerHTML = html;
+          const el = temp.querySelector(selector);
+          if (el) document.getElementById(id).appendChild(el);
+        });
+    }
+    importSection('header', 'header.html', 'header');
+    importSection('footer', 'footer.html', 'footer');
+
+    // Counter animation on scroll into view
+    function animateCounter(element, end) {
+      let start = 0;
+      const duration = 1200;
+      const startTime = performance.now();
+      function update(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        let next = Math.floor(progress * end);
+        // Optionally round to nearest 5 for effect
+        next = Math.ceil(next / 5) * 5;
+        if (next > end) next = end;
+        element.textContent = String(next).padStart(String(end).length, '0');
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          element.textContent = String(end).padStart(String(end).length, '0');
+        }
+      }
+      requestAnimationFrame(update);
+    }
+
+    let countersAnimated = false;
+    function handleScroll() {
+      if (countersAnimated) return;
+      const counters = document.querySelectorAll('.counter-number');
+      if (!counters.length) return;
+      const firstCounter = counters[0];
+      const rect = firstCounter.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        countersAnimated = true;
+        animateCounter(counters[0], 74);
+        animateCounter(counters[1], 300);
+        animateCounter(counters[2], 8500);
+      }
+    }
+    window.addEventListener('scroll', handleScroll);
+    // In case already in view on load
+    window.addEventListener('DOMContentLoaded', handleScroll);
+  </script>
+</body>
+</html>
