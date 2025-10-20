@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="public/images/New Lomdei Logo.png" />
+  <title>Lomdei - Contact Us</title>
+  <link rel="stylesheet" href="/App.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="../Header.css">
+  <link rel="stylesheet" href="../Footer.css">
+</head>
+<body>
+  <div id="header"></div>
+  <div class="page-container contact-page">
+    <main class="contact-main" id="contact-intro">
+      <h1 class="contact-title">Contact Us</h1>
+    </main>
+    <main class="contact-form-main" id="contact-form">
+      <div class="iframe-container">
+  <div id="form-loading" style="text-align:center; font-size:2rem; font-family:'Montserrat',Arial,sans-serif; font-style:italic; font-weight:400; color:#222; margin:2rem 0;">Form Loading...</div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8XHmSJSSKx-b19lbVLORg6s9UHuUoU9k5Z-kqGZXwlwOjdw/viewform?embedded=true" allowfullscreen onload="document.getElementById('form-loading').style.display='none';"></iframe>
+      </div>
+    </main>
+  </div>
+  <div id="footer"></div>
+  <script>
+    // Dynamically load header and footer HTML
+    function importSection(id, url, selector) {
+      fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const temp = document.createElement('div');
+          temp.innerHTML = html;
+          const el = temp.querySelector(selector);
+          if (el) document.getElementById(id).appendChild(el);
+        });
+    }
+    importSection('header', '../header.html', 'header');
+    importSection('footer', '../footer.html', 'footer');
+
+    // Hamburger menu logic for dynamically loaded header
+    function setupHamburgerMenu() {
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (hamburgerBtn && mobileMenu) {
+        hamburgerBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          mobileMenu.classList.toggle('open');
+          hamburgerBtn.setAttribute('aria-expanded', mobileMenu.classList.contains('open'));
+        });
+        // Close menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+          });
+        });
+        // Optional: close menu on outside click
+        document.addEventListener('click', function(e) {
+          if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+            mobileMenu.classList.remove('open');
+          }
+        });
+      }
+    }
+    // Wait for header to be loaded before setting up hamburger
+    function waitForHeaderAndSetup() {
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      if (hamburgerBtn) {
+        setupHamburgerMenu();
+      } else {
+        setTimeout(waitForHeaderAndSetup, 50);
+      }
+    }
+    waitForHeaderAndSetup();
+  </script>
+</body>
+</html>

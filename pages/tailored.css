@@ -1,30 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mastered-desc, .features-list, .feature-item, .feature-title, .feature-desc {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+}
+
+.mastered-main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  min-height: 80vh;
+  background: url('/images/Lomdei White Background.png') no-repeat center center;
+  background-size: cover;
+}
+.mastered-features {
+    width: 75%;
+}
+@media (max-width: 900px) {
+  .mastered-features {
+    width: 100%;
+  }
+}
 .mastered-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-.mastered-main {
-  margin-top: 9rem;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-
-#platform-intro {
-  background: url('public/images/Lomdei Background 2.png') no-repeat center center;
-  background-size: 100% 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#platform-features.mastered-main {
+.mastered-main:nth-of-type(2) {
   margin-top: 0;
-  padding-top: 4rem;
-  background: none;
+  background: url('/public/images/Lomdei White Background.png') no-repeat center center;
+  background-size: cover;
   position: relative;
   top: 0;
   z-index: 1;
@@ -75,9 +82,6 @@
   flex-direction: column;
   align-items: flex-start;
 }
-.feature-desc {
-  text-align: left;
-}
 
 @media (max-width: 600px) {
   .mastered-page,
@@ -116,21 +120,7 @@
   }
   .mastered-main {
     background: none;
-  }
-}
-@media (max-width: 1200px) {
-  .mastered-content {
-    margin-top: 9rem !important;
-  }
-}
-@media (max-width: 1200px) {
-  #platform-features.mastered-main {
-    margin-top: 0 !important;
-    padding-top: 9rem !important;
-    background: none;
-    position: relative;
-    top: 0;
-    z-index: 1;
+    height: 60vh;
   }
 }
 #platform-features {
@@ -161,4 +151,33 @@
 }
 .feature-desc, .impact-desc {
     font-size: 16pt;
+}
+.blue-background {
+    background-color: #0f90ce;
+    padding: 2rem 4rem 2rem 0;
+
+}
+.impact-main {
+  margin-top: 8rem;
+}
+.impact-title {
+    margin-left: 50%;
+}
+.impact-text {
+  background-color: #f0f1f5;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.impact-desc {
+  margin-left: 50%;
+}
+@media (max-width: 900px) {
+    .impact-title {
+        margin-left: 0;
+        text-align: center;
+    }
+    .impact-desc {
+        margin-left: 0;
+        text-align: center;
+    }
 }
