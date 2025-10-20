@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lomdei - TailorED</title>
   <link rel="icon" type="image/svg+xml" href="../public/images/New Lomdei Logo.png" />
-  <link rel="stylesheet" href="/App.css">
-  <link rel="stylesheet" href="/pages/tailored.css">
-  <link rel="stylesheet" href="/Header.css">
-  <link rel="stylesheet" href="/Footer.css">
+  <link rel="stylesheet" href="../App.css">
+  <link rel="stylesheet" href="./tailored.css">
+  <link rel="stylesheet" href="../Header.css">
+  <link rel="stylesheet" href="../Footer.css">
 
 </head>
 <body>
@@ -77,8 +77,8 @@
           if (el) document.getElementById(id).appendChild(el);
         });
     }
-    importSection('header',  '../header.html', 'header');
-    importSection('footer', '../footer.html', 'footer');
+  importSection('header',  '../header.html', 'header');
+  importSection('footer', '../footer.html', 'footer');
 
     // Hamburger menu logic for dynamically loaded header
     function setupHamburgerMenu() {

@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lomdei</title>
-  <link rel="icon" type="image/svg+xml" href="public/images/New Lomdei Logo.png" />
-  <link rel="stylesheet" href="/App.css">
-  <link rel="stylesheet" href="/Header.css">
-  <link rel="stylesheet" href="/Footer.css">
+  <link rel="icon" type="image/svg+xml" href="./public/images/New Lomdei Logo.png" />
+  <link rel="stylesheet" href="./App.css">
+  <link rel="stylesheet" href="./Header.css">
+  <link rel="stylesheet" href="./Footer.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +15,7 @@
   <div class="page-container">
     <div class="landing-title-container">
       <div class="main-logo">
-  <img src="public/images/New Lomdei Logo.png" alt="Lomdei Logo" class="lomdei-logo" />
+  <img src="./public/images/New Lomdei Logo.png" alt="Lomdei Logo" class="lomdei-logo" />
         <h1>Lomdei bridges tradition and innovation, empowering educators to create personalized Jewish learning experiences accessible to all students.</h1>
       </div>
     </div>
@@ -27,7 +27,7 @@
             <div class="program-title">MasterED</div>
             <div class="program-icon">
               <span style="font-size: 4rem;">
-                <img src="public/images/MasterEd-Icon.PNG" alt="MasterEd Book Icon" />
+                <img src="./public/images/MasterEd-Icon.PNG" alt="MasterEd Book Icon" />
               </span>
             </div>
             <div class="program-desc">Powerful <b>platform</b>, seamlessly simple.</div>
@@ -36,7 +36,7 @@
             <div class="program-title">TailorED</div>
             <div class="program-icon">
               <span style="font-size: 4rem;">
-                <img src="public/images/TailorEd-Icon.PNG" alt="TailorED Lightbulb Icon" />
+                <img src="./public/images/TailorEd-Icon.PNG" alt="TailorED Lightbulb Icon" />
               </span>
             </div>
             <div class="program-desc">Customized <b>coaching</b>, transformative teaching.</div>
@@ -45,7 +45,7 @@
             <div class="program-title">StandardED</div>
             <div class="program-icon">
               <span style="font-size: 4rem;">
-                <img src="public/images/StandardEd-Icon.PNG" alt="StandardED Star Icon" />
+                <img src="./public/images/StandardEd-Icon.PNG" alt="StandardED Star Icon" />
               </span>
             </div>
             <div class="program-desc">Coming soon!</div>
@@ -55,27 +55,27 @@
     </div>
     <div class="lower-section">
       <div class="transparent-section">
-        <h2 class="programs-title"><img src="public/images/government-icon.png" alt="Government Grants Icon" />GOVERNMENT GRANTS</h2>
+  <h2 class="programs-title"><img src="./public/images/government-icon.png" alt="Government Grants Icon" />GOVERNMENT GRANTS</h2>
         <div class="government-grants-content">
           <div class="grants-boxes">
             <div class="grant-box">
-              <img class="star-icon" alt="star-icon" src="public/images/star-icon.png" />
+              <img class="star-icon" alt="star-icon" src="./public/images/star-icon.png" />
               <h4>Title IIA Funding</h4>
               <p>Federal grants available for professional development and educational coaching programs.</p>
               <p>Title IIA dollars can be used towards professional development &amp; coaching and for the MasterED Learning Platform</p>
             </div>
             <div class="grant-box">
-              <img class="star-icon" alt="star-icon" src="public/images/star-icon.png" />
+              <img class="star-icon" alt="star-icon" src="./public/images/star-icon.png" />
               <h4>Title IV Funding</h4>
               <p>Federal grants specifically designated for educational software and technology solutions.</p>
               <p>Title IV dollars (Software) can be used towards the Lomdei Learning Platform</p>
             </div>
           </div>
-          <a class="contact-box" href="/pages/contact.html"><b>Contact</b> us for more information.</a>
+          <a class="contact-box" href="./pages/contact.html"><b>Contact</b> us for more information.</a>
         </div>
       </div>
       <div class="global-impact-section">
-        <h2 class="programs-title"><img src="public/images/globe-icon.png" alt="Global Impact Icon" />GLOBAL IMPACT</h2>
+  <h2 class="programs-title"><img src="./public/images/globe-icon.png" alt="Global Impact Icon" />GLOBAL IMPACT</h2>
         <div class="global-impact-content">
           <p class="impact-subtitle">See Lomdei's reach across the world.</p>
           <div class="impact-counters">
@@ -103,8 +103,8 @@
         });
     }
 
-    importSection('header', 'header.html', 'header');
-    importSection('footer', 'footer.html', 'footer');
+  importSection('header', './header.html', 'header');
+  importSection('footer', './footer.html', 'footer');
 
     // Hamburger menu logic for dynamically loaded header
     function setupHamburgerMenu() {
