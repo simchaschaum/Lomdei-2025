@@ -98,14 +98,10 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     background-size: cover;
     width: 100%;
     display: block;
-    position: relative;
-    z-index: 1;
   }
   .mastered-main#platform-intro {
     margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
-    position: relative;
-    z-index: 2;
   }
   .mastered-main#platform-features {
     margin-top: 0;
@@ -114,21 +110,15 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     min-height: unset;
     max-height: unset;
     overflow: visible;
-    position: relative;
-    z-index: 1;
   }
   .mastered-features {
     width: 100%;
     box-sizing: border-box;
-    position: relative;
-    z-index: 1;
     margin: 0 auto;
     padding-bottom: 2rem;
   }
   .mastered-content {
     width: 95%;
-    position: relative;
-    z-index: 2;
   }
   .mastered-title {
     font-size: 2.8rem;

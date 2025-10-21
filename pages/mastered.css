@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mastered-desc, .features-list, .feature-item, .feature-title, .feature-desc {
   font-family: 'Montserrat', Arial, sans-serif !important;
-}
-
-.mastered-main {
-  width: 100%;
+  .mastered-page,
+  .page-container.mastered-page {
+    display: block;
+    min-height: unset;
+    height: auto;
+    width: 100%;
+  }
   .mastered-main {
     margin-top: 0;
     min-height: unset;
@@ -12,14 +15,10 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     background-size: cover;
     width: 100%;
     display: block;
-    position: relative;
-    z-index: 1;
   }
   .mastered-main#platform-intro {
     margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
-    position: relative;
-    z-index: 2;
   }
   .mastered-main#platform-features {
     margin-top: 0;
@@ -28,25 +27,16 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     min-height: unset;
     max-height: unset;
     overflow: visible;
-    position: relative;
-    z-index: 1;
   }
   .mastered-features {
     width: 100%;
     box-sizing: border-box;
-    position: relative;
-    z-index: 1;
     margin: 0 auto;
     padding-bottom: 2rem;
   }
   .mastered-content {
     width: 95%;
-    position: relative;
-    z-index: 2;
   }
-.mastered-title {
-  font-family: 'Glacial Indifference', Arial, sans-serif;
-  font-size: 6.94rem; /* 111pt = 6.94rem */
   text-shadow: 0 2px 8px rgba(0,0,0,0.15);
   margin-bottom: 2rem;
 }
@@ -95,10 +85,6 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     min-height: unset;
     background-size: cover;
     width: 100%;
-  }
-  .mastered-main#platform-intro {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2.5rem;
   }
   .mastered-main#platform-features {
      margin-top: 2.5rem;
@@ -191,4 +177,3 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
         margin-left: 0;
         text-align: center;
     }
-}
