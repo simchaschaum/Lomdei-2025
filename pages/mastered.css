@@ -11,7 +11,7 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   justify-content: center;
   padding-bottom: 50px;
   min-height: 80vh;
-  background: url('/Lomdei-2025/images/Lomdei White Background.png') no-repeat center center;
+  background: url('/Lomdei-2025/public/images/Lomdei White Background.png') no-repeat center center;
   background-size: cover;
 }
 
@@ -113,7 +113,7 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     margin-top: 0;
   }
   #platform-intro {
-    background: url('/images/Lomdei Background 2.png') no-repeat center center;
+    background: url('/Lomdei-2025/public/images/Lomdei Background 2.png') no-repeat center center;
     background-size: 100% 100%;
   }
   .mastered-main {
