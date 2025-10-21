@@ -391,7 +391,7 @@ body {
   min-width: 100vw;
   margin: 0;
   padding: 0;
-  background: url('../public/images/Lomdei Home page background.png') no-repeat center center fixed;
+  background: url('/Lomdei-2025/images/Lomdei Home page background.png') no-repeat center center fixed;
   background-size: cover;
   z-index: 0;
 }
