@@ -103,12 +103,12 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     padding-bottom: 2.5rem;
   }
   .mastered-main#platform-features {
-     margin-top: 0;
-     padding-top: 0.5rem;
-     clear: both;
-     min-height: unset;
-     max-height: unset;
-     overflow-y: unset;
+    	margin-top: 2.5rem;
+    	padding-top: 0.5rem;
+    	clear: both;
+    	min-height: unset;
+    	max-height: unset;
+    	overflow-y: unset;
   }
   .mastered-content {
     width: 95%;

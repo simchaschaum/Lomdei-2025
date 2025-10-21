@@ -10,7 +10,7 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   align-items: center;
   justify-content: center;
   padding-bottom: 50px;
-  min-height: 80vh;
+  height: auto;
   background: url('/Lomdei-2025/public/images/Lomdei Home page background.png') no-repeat center center;
   background-size: cover;
 }
@@ -101,7 +101,7 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     padding-bottom: 2.5rem;
   }
   .mastered-main#platform-features {
-     margin-top: 0;
+     margin-top: 2.5rem;
      padding-top: 0.5rem;
      clear: both;
      min-height: unset;
