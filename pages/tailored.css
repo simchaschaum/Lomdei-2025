@@ -3,10 +3,15 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   font-family: 'Montserrat', Arial, sans-serif !important;
   .mastered-page,
   .page-container.mastered-page {
+    display: block;
+    min-height: unset;
+    height: auto;
+    width: 100%;
+  }
+  .mastered-page {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 100%;
   }
   .mastered-main {
     margin-top: 0;
@@ -14,18 +19,22 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     height: auto;
     background-size: cover;
     width: 100%;
+    display: block;
+  }
+  .mastered-main {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
     padding-bottom: 50px;
+    min-height: 80vh;
+    background: url('/Lomdei-2025/public/images/Lomdei Home page background.png') no-repeat center center;
+    background-size: cover;
   }
   .mastered-main#platform-intro {
     margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
-    position: relative;
-    z-index: 2;
   }
   .mastered-main#platform-features {
     margin-top: 0;
@@ -34,21 +43,25 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     min-height: unset;
     max-height: unset;
     overflow: visible;
+  }
+  .mastered-main:nth-of-type(2) {
+    margin-top: 0;
+    background: url('/Lomdei-2025/public/images/Lomdei White Background.png') no-repeat center center;
+    background-size: cover;
     position: relative;
+    top: 0;
     z-index: 1;
   }
   .mastered-features {
     width: 100%;
     box-sizing: border-box;
-    position: relative;
-    z-index: 1;
     margin: 0 auto;
     padding-bottom: 2rem;
   }
   .mastered-content {
     width: 95%;
-    position: relative;
-    z-index: 2;
+  }
+  .mastered-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,8 +71,6 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     position: relative;
     bottom: 20%;
   }
-  font-family: 'Glacial Indifference', Arial, sans-serif;
-  font-size: 6.94rem; /* 111pt = 6.94rem */
   text-shadow: 0 2px 8px rgba(0,0,0,0.15);
   margin-bottom: 2rem;
 }
@@ -103,30 +114,19 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     width: 100%;
   }
   .mastered-main {
-    margin-top: 0;
-    min-height: unset;
+    margin-top: 6rem;
     height: auto;
+    min-height: unset;
     background-size: cover;
     width: 100%;
-    display: block;
-  }
-  .mastered-main#platform-intro {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2.5rem;
   }
   .mastered-main#platform-features {
-    margin-top: 0;
-    padding-top: 2.5rem;
-    clear: both;
-    min-height: unset;
-    max-height: unset;
-    overflow: visible;
-  }
-  .mastered-features {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding-bottom: 2rem;
+     margin-top: 2.5rem;
+     padding-top: 0.5rem;
+     clear: both;
+     min-height: unset;
+     max-height: unset;
+     overflow-y: unset;
   }
   .mastered-content {
     width: 95%;
@@ -160,6 +160,14 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.page-container.mastered-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.page-container.mastered-page > main {
+  flex-shrink: 0;
 }
 .page-container.mastered-page > main {
   flex-shrink: 0;
@@ -205,9 +213,9 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     .impact-title {
         margin-left: 0;
         text-align: center;
-    }
+  }
+}
     .impact-desc {
         margin-left: 0;
         text-align: center;
     }
-}
