@@ -92,7 +92,7 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   .mastered-main {
     margin-top: 6rem;
     height: auto;
-    min-height: unset;
+    min-height: 80vh;
     background-size: cover;
     width: 100%;
   }
