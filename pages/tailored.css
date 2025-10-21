@@ -1,52 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mastered-desc, .features-list, .feature-item, .feature-title, .feature-desc {
   font-family: 'Montserrat', Arial, sans-serif !important;
-}
-
-.mastered-main {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 50px;
-  min-height: 80vh;
-  background: url('/Lomdei-2025/public/images/Lomdei Home page background.png') no-repeat center center;
-  background-size: cover;
-}
-.mastered-features {
-    width: 75%;
-}
-@media (max-width: 900px) {
-  .mastered-features {
+  .mastered-page,
+  .page-container.mastered-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     width: 100%;
   }
-}
-.mastered-page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.mastered-main:nth-of-type(2) {
-  margin-top: 0;
-  background: url('/Lomdei-2025/public/images/Lomdei White Background.png') no-repeat center center;
-  background-size: cover;
-  position: relative;
-  top: 0;
-  z-index: 1;
-}
-.mastered-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 60%;
-  position: relative;
-  bottom: 20%;
-}
-.mastered-title {
+  .mastered-main {
+    margin-top: 0;
+    min-height: unset;
+    height: auto;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 50px;
+  }
+  .mastered-main#platform-intro {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+    z-index: 2;
+  }
+  .mastered-main#platform-features {
+    margin-top: 0;
+    padding-top: 2.5rem;
+    clear: both;
+    min-height: unset;
+    max-height: unset;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+  }
+  .mastered-features {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+  .mastered-content {
+    width: 95%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    position: relative;
+    bottom: 20%;
+  }
   font-family: 'Glacial Indifference', Arial, sans-serif;
   font-size: 6.94rem; /* 111pt = 6.94rem */
   text-shadow: 0 2px 8px rgba(0,0,0,0.15);
