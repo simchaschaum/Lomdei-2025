@@ -386,7 +386,7 @@
 }
 
 
-body {
+/* body {
   min-height: 100vh;
   min-width: 100vw;
   margin: 0;
@@ -394,4 +394,4 @@ body {
   background: url('/Lomdei-2025/images/Lomdei Home page background.png') no-repeat center center fixed;
   background-size: cover;
   z-index: 0;
-}
+} */
