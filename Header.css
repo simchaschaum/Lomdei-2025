@@ -1,3 +1,10 @@
+header.site-header{
+  background-color: #dcf5fb;
+  display: flex;
+  align-items: center;
+}
+
+/* Login button box styling */
 .header-logo {
   height: 4rem;
   margin-left: 2rem;
@@ -15,11 +22,20 @@
 .header-link {
   color: #000;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   padding: 0 1.5rem;
   transition: color 0.2s;
+}
+.header-login-button {
+  background: #f0f1f5;
+  box-shadow: -3px -3px 0 #d3d3d3;
+  border-top: none;
+  border-left: none;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  transition: box-shadow 0.2s;
 }
 .header-link:hover {
   color: #0077a3;

@@ -8,14 +8,16 @@
   <link rel="stylesheet" href="./App.css">
   <link rel="stylesheet" href="./Header.css">
   <link rel="stylesheet" href="./Footer.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="header"></div>
   <div class="page-container">
     <div class="landing-title-container">
       <div class="main-logo">
-  <img src="./public/images/New Lomdei Logo.png" alt="Lomdei Logo" class="lomdei-logo" />
+      <img src="./public/images/New Lomdei Logo.png" alt="Lomdei Logo" class="lomdei-logo" />
         <h1>Lomdei bridges tradition and innovation, empowering educators to create personalized Jewish learning experiences accessible to all students.</h1>
       </div>
     </div>
@@ -54,8 +56,8 @@
       </div>
     </div>
     <div class="lower-section">
-      <div class="transparent-section">
-  <h2 class="programs-title"><img src="./public/images/government-icon.png" alt="Government Grants Icon" />GOVERNMENT GRANTS</h2>
+    <div class="transparent-section">
+      <h2 class="programs-title"  id="titleDollars"><img src="./public/images/government-icon.png" alt="Government Grants Icon" />GOVERNMENT GRANTS</h2>
         <div class="government-grants-content">
           <div class="grants-boxes">
             <div class="grant-box">
@@ -103,7 +105,7 @@
         });
     }
 
-  importSection('header', './header.html', 'header');
+  importSection('header', './home-header.html', 'header');
   importSection('footer', './footer.html', 'footer');
 
     // Hamburger menu logic for dynamically loaded header
