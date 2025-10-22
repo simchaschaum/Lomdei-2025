@@ -2,6 +2,7 @@ header.site-header{
   background-color: #dcf5fb;
   display: flex;
   align-items: center;
+  padding: 0.5rem 0;
 }
 
 /* Login button box styling */
