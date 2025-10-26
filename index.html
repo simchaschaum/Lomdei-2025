@@ -94,15 +94,26 @@
       </div>
       <div class="partner-schools-section">
         <h2 class="programs-title"><img src="./public/images/partner-schools-icon.png" alt="Partner Schools Icon" />PARTNER SCHOOLS</h2>
-        <a class="contact-box" href="./pages/contact.html"><b>Contact</b> us for more information.</a>
-        <div class="list-box">
+        <div class="partner-schools-flex">
+          <a class="contact-box" href="./pages/contact.html"><b>Contact</b> us for more information.</a>
+          <div class="list-box">
           <h6>Explore Lomdei’s growing list of schools being serviced.</h6>
           <div class="white-box">
             <p>Hear from teachers and school leaders whose students are already benefiting from Lomdei.</p>
           </div>
           <img src="./public/images/Lomdei-Schools-thumbnail.jpg" alt="Lomdei Schools Thumbnail" class="schools-thumbnail" />
+  <!-- Modal for thumbnail image -->
+  <div id="thumbnailModal">
+    <div id="modalContent" class="modal-content">
+      <img src="./public/images/Lomdei-Schools.png" alt="Lomdei Schools Thumbnail" class="modal-image" />
+      <button id="closeModalBtn" class="close-modal-btn">&times;</button>
+    </div>
+   </div>
+          </div>
         </div>
-        <div class="map-box"></div>
+        <div class="map-box">
+          <img src="./public/images/Lomdei-Map.png" alt="Lomdei Schools Map" class="schools-map" />
+        </div>
       </div>
     </div>
   </div>
@@ -121,8 +132,8 @@
         });
     }
 
-  importSection('header', './home-header.html', 'header');
-  importSection('footer', './footer.html', 'footer');
+    importSection('header', './home-header.html', 'header');
+    importSection('footer', './footer.html', 'footer');
 
     // Hamburger menu logic for dynamically loaded header
     function setupHamburgerMenu() {
@@ -158,6 +169,27 @@
       }
     }
     waitForHeaderAndSetup();
+
+    // Modal logic for thumbnail image
+    document.addEventListener('DOMContentLoaded', function() {
+      var thumbnail = document.querySelector('.schools-thumbnail');
+      var modal = document.getElementById('thumbnailModal');
+      var closeBtn = document.getElementById('closeModalBtn');
+      var modalContent = document.getElementById('modalContent');
+      if (thumbnail && modal && closeBtn && modalContent) {
+        thumbnail.addEventListener('click', function(e) {
+          modal.style.display = 'flex';
+        });
+        closeBtn.addEventListener('click', function(e) {
+          modal.style.display = 'none';
+        });
+        modal.addEventListener('click', function(e) {
+          if (!modalContent.contains(e.target)) {
+            modal.style.display = 'none';
+          }
+        });
+      }
+    });
 
     // Counter animation on scroll into view
     function animateCounter(element, end) {
