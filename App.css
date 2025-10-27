@@ -537,6 +537,9 @@
   box-sizing: border-box;
   padding: 2%;
 }
+.program-square.disabled {
+  pointer-events: none;
+}
 .program-icon {
   display: flex;
   align-items: center;
