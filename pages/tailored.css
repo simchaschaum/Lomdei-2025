@@ -29,31 +29,19 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     justify-content: center;
     padding-bottom: 50px;
     min-height: 80vh;
-    background: url('.public/images/Lomdei Home page background.png') no-repeat center center;
+    /* background: url('../public/images/Lomdei Home page background.png') no-repeat center center; GET PICTURES FROM ESTHER */ 
     background-size: cover;
   }
+  .mastered-main#platform-features {
+    background: url(../public/images/left-border-mastered-tailored.png) no-repeat center center;
+    background-size: cover;
+   }
   .mastered-main#platform-intro {
     margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
   }
-  .mastered-main#platform-features {
-    margin-top: 0;
-    padding-top: 2.5rem;
-    clear: both;
-    min-height: unset;
-    max-height: unset;
-    overflow: visible;
-  }
-  .mastered-main:nth-of-type(2) {
-    margin-top: 0;
-    background: url('.public/images/Lomdei White Background.png') no-repeat center center;
-    background-size: cover;
-    position: relative;
-    top: 0;
-    z-index: 1;
-  }
   .mastered-features {
-    width: 75%;
+    width: 50%;
     box-sizing: border-box;
     margin: 0 auto;
     padding-bottom: 2rem;
@@ -76,13 +64,27 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
 }
 .mastered-subtitle {
   font-family: 'TT Wellingtons', Arial, sans-serif;
-  font-size: 2.19rem; /* 35pt = 2.19rem */
+  font-size: 3rem;
   margin-bottom: 1.5rem;
+  text-shadow: 1px 1px #bfbfbf;
+  font-weight: 300;
+  margin-top: 1.5rem;
+}
+.mastered-features .mastered-subtitle {
+  font-size: 4rem;
+  font-weight: 600;
 }
 .mastered-desc {
-  font-size: 1.225rem; /* 19.6pt = 1.225rem */
+  font-size: 1.4rem; 
   margin-bottom: 0;
+  font-weight: 300;
+  width: 75%;
+  line-height: 1.5;
 }
+.mastered-desc b{
+  font-weight: 600;
+}
+
 .features-list {
   list-style: none;
   padding: 0;
@@ -105,7 +107,9 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   align-items: flex-start;
 }
 #mastered-h1-title{
-    font-size: 5rem;
+    font-size: 6.94rem;
+    font-weight: 400;
+    text-shadow: 3px 3px #46b4dc;
   }
 @media (max-width: 600px) {
     .mastered-features {
@@ -136,30 +140,18 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   .mastered-content {
     width: 95%;
   }
-  .mastered-title {
-    font-size: 2.8rem;
-  }
-  .mastered-subtitle{
-    font-size: 1.2rem;
-  }
-  .mastered-desc {
-    font-size: 1rem;
-  }
   .site-footer {
     position: relative;
     margin-top: 0;
   }
   #platform-intro {
-    background: url('.public/images/Lomdei Home page background.png') no-repeat center center;
+    background: url('../public/images/Lomdei Home page background.png') no-repeat center center;
     background-size: 100% 100%;
   }
   .mastered-main {
-    background: none;
+    background: url(../public/images/left-border-mastered-tailored.png);
     height: 60vh;
   }
-}
-#platform-features {
-    background-color: #f0f1f5;
 }
 .page-container.mastered-page {
   min-height: 100vh;
