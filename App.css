@@ -1,60 +1,3 @@
-@media (max-width: 600px) {
-  .partner-schools-section .partner-schools-flex > .list-box {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-  }
-  .partner-schools-section .partner-schools-flex > .list-box > * {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-@media (max-width: 600px) {
-  .partner-schools-section .partner-schools-flex > .list-box {
-    order: 1 !important;
-  }
-  .partner-schools-section .partner-schools-flex > .map-box {
-    order: 2 !important;
-  }
-  .partner-schools-section .partner-schools-flex > .contact-box {
-    order: 3 !important;
-  }
-}
-@media (max-width: 600px) {
-  .partner-schools-section .partner-schools-flex {
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    width: 100% !important;
-  }
-  .partner-schools-section .partner-schools-flex > .list-box,
-  .partner-schools-section .partner-schools-flex > .map-box,
-  .partner-schools-section .partner-schools-flex > .contact-box {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin: 0 auto 1.5rem auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .partner-schools-section .partner-schools-flex > .list-box {
-    text-align: center !important;
-    padding-top: 4rem;
-  }
-  .partner-schools-section .partner-schools-flex > .map-box img.schools-map {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
-  }
-  .partner-schools-section .schools-thumbnail{
-    padding-right: 0 !important;
-    width: 30% !important;
-  }
-}
 /* Ensure footer never overlaps previous content */
 .site-footer {
   clear: both;
@@ -74,7 +17,6 @@
   align-items: flex-start;
   gap: 2rem;
 }
-
 .partner-schools-flex .contact-box {
   margin-left: 20rem;
   margin-right: 0;
