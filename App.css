@@ -11,6 +11,51 @@
   padding-bottom: 6rem; /* Adjust if footer height changes */
 }
 /* Flex layout for partner schools section */
+@media (max-width: 600px) {
+  .partner-schools-flex .list-box {
+    order: 1 !important;
+  }
+  .partner-schools-flex .contact-box {
+    order: 2 !important;
+  }
+  .partner-schools-flex {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: 10rem;
+    gap: 2rem;
+  }
+  .map-box{
+   visibility: hidden !important;
+  }
+  .list-box{
+    width: 90% !important;
+    height: auto !important;
+    padding-right: 1rem !important;
+    margin-left: 0 !important;
+  }
+  img.schools-thumbnail {
+    width: 50% !important;
+    height: auto !important;
+    padding-right: 0 !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  .partner-schools-flex .contact-box {
+    margin: 0 auto !important;
+    position: static !important;
+    display: block !important;
+    width: 80% !important;
+    min-width: 0 !important;
+    max-width: 400px !important;
+  }
+  div.white-box{
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-right: 0 !important;
+  }
+}
 .partner-schools-flex {
   display: flex;
   flex-direction: row;
