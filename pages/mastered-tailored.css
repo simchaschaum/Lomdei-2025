@@ -23,7 +23,7 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   }
   .mastered-main {
     width: 100%;
-    margin: 0 auto;
+    margin: 10rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +52,7 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 70%;
+    width: 95%;
     position: relative;
     bottom: 20%;
   }
@@ -60,10 +60,20 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   margin-bottom: 2rem;
 }
 .mastered-subtitle {
+  /* font-stretch: condensed;
+  letter-spacing: -0.08em; */
   font-family: 'TT Wellingtons', Arial, sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1.5rem;
-  text-shadow: 1px 1px #bfbfbf;
+  text-shadow:
+    1.5px 0 #bfbfbf,
+    -1.5px 0 #bfbfbf,
+    0 1.5px #bfbfbf,
+    0 -1.5px #bfbfbf,
+    1.5px 1.5px #bfbfbf,
+    -1.5px -1.5px #bfbfbf,
+    1.5px -1.5px #bfbfbf,
+    -1.5px 1.5px #bfbfbf;
   font-weight: 300;
   margin-top: 1.5rem;
 }
@@ -72,11 +82,11 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   font-weight: 600;
 }
 .mastered-desc {
-  font-size: 1.4rem; 
+  font-size: 2.2rem; 
   margin-bottom: 0;
-  font-weight: 300;
-  width: 75%;
-  line-height: 1.5;
+  font-weight: 400;
+  width: 70%;
+  line-height: 1.9;
 }
 .mastered-desc b{
   font-weight: 600;
@@ -104,9 +114,10 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   align-items: flex-start;
 }
 #mastered-h1-title{
-    font-size: 10rem;
+    font-size: 11rem;
     font-weight: 400;
     text-shadow: 3px 3px #46b4dc;
+    margin-top: 0;
   }
 @media (max-width: 600px) {
     .mastered-features {
