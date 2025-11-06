@@ -274,13 +274,14 @@
 
 /* Contact box styling */
  .contact-box {
-  width: 20%;
-  min-width: 180px;
+  width: 25%;
+  min-width: 200px;
+  max-width: 300px;
   background: #f0f1f5;
   border-radius: 90px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 2.3rem;
+  font-size: 1.3rem;
   color: #222;
   text-align: center;
   padding: 0.50rem;
@@ -288,7 +289,7 @@
   margin: 0;
   transition: box-shadow 0.2s, background 0.2s;
   position: absolute;
-  right: 5%;
+  right: 2.5%;
   bottom: -25px;
 }
 .contact-box:hover {
@@ -316,16 +317,19 @@
 /* Grant box title formatting */
 .grant-box h4 {
   font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 2.75rem;
+  font-size: 2.3rem;
   font-weight: 400;
   text-align: center;
   margin: 0.5rem;
-  text-shadow: 0 0 1.5px rgba(0,0,0,0.2), 0 0.4px 1.5px rgba(0,0,0,0.2), 0 -0.4px 1.5px rgba(0,0,0,0.2), 0.4px 0 1.5px rgba(0,0,0,0.2), -0.4px 0 1.5px rgba(0,0,0,0.2);
+  height: 3rem;
+  text-shadow: 0 0 2.5px rgba(0,0,0,0.22), 0 0.8px 2.5px rgba(0,0,0,0.22), 0 -0.8px 2.5px rgba(0,0,0,0.22), 0.8px 0 2.5px rgba(0,0,0,0.22), -0.8px 0 2.5px rgba(0,0,0,0.22);
 }
 .grant-box p, ul{
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 1.3rem;
+  height: 5.5rem;
+  text-align: justify;
 }
 .grant-box ul{
   text-align: left;
@@ -360,7 +364,7 @@
 }
 /* Government grants section styles */
 .government-grants-content {
-  width: 80%;
+  width: 90%;
   margin-left: 0;
   margin-top: -10px;
   border-top-right-radius: 2rem;
@@ -369,14 +373,14 @@
   border-bottom-left-radius: 0;
   background: #fafefe;
   box-sizing: border-box;
-  padding: 13rem 2rem;
+  padding: 13rem 3rem;
   text-align: left;
   position: relative;
 }
 /* Grants boxes layout */
 .grants-boxes {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 5%;
   height: 280pt;
@@ -384,16 +388,16 @@
 
 .grant-box {
   position: relative;
-  width: 40%;
+  width: 100%;
   min-width: 180px;
-  height: 100%;
+  min-height: 180px;
   background: #f0f1f5;
   border-radius: 0.5rem;
   border: 0.5px solid #777777;
   box-shadow: 0 4px 24px rgba(0,0,0,0.5);
   flex-direction: column;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 1rem;
