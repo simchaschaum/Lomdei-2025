@@ -92,7 +92,43 @@
             <div class="counter"><span class="counter-number">300</span> <span class="counter-label">teachers</span></div>
             <div class="counter"><span class="counter-number">8500</span> <span class="counter-label">students</span></div>
           </div>
-          <div class="reviews-carousel"></div>
+          <div class="reviews-carousel">
+            <div class="carousel-container">
+              <div class="carousel-track-wrapper">
+                <div class="carousel-track">
+                  <div class="review-box">
+                    <p>"Lomdei has transformed how we teach. The personalized approach makes every student feel valued."</p>
+                    <span class="reviewer">- Sarah Cohen, Principal</span>
+                  </div>
+                  <div class="review-box">
+                    <p>"The platform is intuitive and our teachers love the flexibility it provides."</p>
+                    <span class="reviewer">- Rabbi David Schwartz</span>
+                  </div>
+                  <div class="review-box">
+                    <p>"Student engagement has increased significantly since implementing Lomdei."</p>
+                    <span class="reviewer">- Mrs. Rachel Goldstein</span>
+                  </div>
+                  <div class="review-box">
+                    <p>"The coaching program has elevated our entire teaching staff's skills."</p>
+                    <span class="reviewer">- Dr. Michael Levy</span>
+                  </div>
+                  <div class="review-box">
+                    <p>"Lomdei bridges traditional values with modern pedagogy beautifully."</p>
+                    <span class="reviewer">- Mrs. Esther Friedman</span>
+                  </div>
+                  <div class="review-box">
+                    <p>"Our students are more motivated and connected to their learning than ever."</p>
+                    <span class="reviewer">- Rabbi Joshua Klein</span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-dots">
+                <button class="dot" data-index="0" aria-label="Go to reviews 1-3"></button>
+                <button class="dot" data-index="1" aria-label="Go to reviews 2-4"></button>
+                <button class="dot" data-index="2" aria-label="Go to reviews 3-5"></button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="partner-schools-section">
@@ -232,6 +268,57 @@
     window.addEventListener('scroll', handleScroll);
     // In case already in view on load
     window.addEventListener('DOMContentLoaded', handleScroll);
+
+    // Carousel functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const track = document.querySelector('.carousel-track');
+      const dots = document.querySelectorAll('.dot');
+      
+      if (!track || !dots.length) return;
+      
+      const reviews = document.querySelectorAll('.review-box');
+      const reviewWidth = 20; // rem
+      const gap = 2; // rem
+      const moveAmount = reviewWidth + gap; // Total width including gap
+      
+      let currentIndex = 0;
+      const maxIndex = reviews.length - 3; // Show 3 at a time
+      
+      function updateCarousel() {
+        const offset = currentIndex * moveAmount;
+        track.style.transform = `translateX(-${offset}rem)`;
+        
+        // Update active dot
+        dots.forEach((dot, index) => {
+          if (index === currentIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+        
+        // Update middle review (scale up)
+        reviews.forEach((review, index) => {
+          review.classList.remove('middle');
+        });
+        // The middle visible review is at currentIndex + 1
+        const middleIndex = currentIndex + 1;
+        if (middleIndex >= 0 && middleIndex < reviews.length) {
+          reviews[middleIndex].classList.add('middle');
+        }
+      }
+      
+      // Add click handlers to dots
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', function() {
+          currentIndex = index;
+          updateCarousel();
+        });
+      });
+      
+      // Initialize
+      updateCarousel();
+    });
   </script>
 </body>
 </html>
