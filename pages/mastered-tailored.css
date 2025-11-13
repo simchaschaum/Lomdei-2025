@@ -23,14 +23,13 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   }
   .mastered-main {
     width: 100%;
-    margin: 10rem auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
     min-height: 100vh;
-    /* background: url('../public/images/Lomdei Home page background.png') no-repeat center center; GET PICTURES FROM ESTHER */ 
-    background-size: cover;
   }
   .mastered-main#platform-features {
     background: url(../public/images/left-border-mastered-tailored.png) no-repeat center center;
@@ -39,6 +38,14 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   .mastered-main#platform-intro {
     margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+  .intro-background-mastered{
+    background: url(../public/images/Mastered\ background\ pic.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .intro-background-tailored{
+    background: url(../public/images/Tailored\ background\ pic.png) no-repeat center center;
+    background-size: 100% 100%;
   }
   .mastered-features {
     width: 50%;
@@ -232,3 +239,8 @@ h2.impact-title{
         text-align: center;
         font-size: 2rem;
     }
+.intro-background-mastered,
+.intro-background-tailored {
+  min-height: 100vh !important;
+  height: auto !important;
+}
