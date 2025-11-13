@@ -23,8 +23,6 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   }
   .mastered-main {
     width: 100%;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +34,6 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     background-size: cover;
    }
   .mastered-main#platform-intro {
-    margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
   }
   .intro-background-mastered{
@@ -45,7 +42,7 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   }
   .intro-background-tailored{
     background: url(../public/images/Tailored\ background\ pic.png) no-repeat center center;
-    background-size: 100% 100%;
+    background-size: 100% 400%;
   }
   .mastered-features {
     width: 50%;
@@ -64,14 +61,16 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     bottom: 20%;
   }
   text-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  margin-bottom: 2rem;
+  margin: 0;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 .mastered-subtitle {
   /* font-stretch: condensed;
   letter-spacing: -0.08em; */
   font-family: 'TT Wellingtons', Arial, sans-serif;
-  font-size: 4rem;
-  margin-bottom: 1.5rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
   text-shadow:
     1.5px 0 #bfbfbf,
     -1.5px 0 #bfbfbf,
@@ -82,14 +81,19 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     1.5px -1.5px #bfbfbf,
     -1.5px 1.5px #bfbfbf;
   font-weight: 300;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 .mastered-features .mastered-subtitle {
-  font-size: 4.5rem;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: none;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 .mastered-desc {
-  font-size: 2.2rem; 
+  font-size: 1.8rem; 
+  margin-top: 2rem;
   margin-bottom: 0;
   font-weight: 400;
   width: 70%;
@@ -102,12 +106,19 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
 .features-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-left: 8rem;
+  width: 130%;
+}
+@media(max-width:1600px)
+{
+  .features-list {
+    margin-left: 1rem;
+  }
 }
 .feature-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 1.5rem;
+  margin-bottom: 5rem;
 }
 .feature-icon {
   width: 100px;
@@ -197,11 +208,11 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   position: relative;
 }
 .feature-title {
-    font-size: 18pt;
+    font-size: 1.7rem;
     margin-bottom: 0;
 }
 .feature-desc, .impact-desc {
-    font-size: 16pt;
+    font-size: 1.7rem;
 }
 .blue-background {
     background-color: #0f90ce;
@@ -241,6 +252,17 @@ h2.impact-title{
     }
 .intro-background-mastered,
 .intro-background-tailored {
-  min-height: 100vh !important;
+  min-height: 110vh !important;
   height: auto !important;
+}
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
