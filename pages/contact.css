@@ -41,7 +41,7 @@ main.contact-main {
 .contact-title {
   font-family: 'Glacial Indifference', Arial, sans-serif;
   font-size: 6.94rem; /* 111pt = 6.94rem */
-  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.075);
   margin-bottom: 2rem;
 }
 .contact-subtitle {
