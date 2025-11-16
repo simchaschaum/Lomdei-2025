@@ -118,7 +118,7 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
 .feature-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 5rem;
+  margin-bottom: 5.5rem;
 }
 .feature-icon {
   width: 100px;
@@ -213,31 +213,44 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
 }
 .feature-desc, .impact-desc {
     font-size: 1.7rem;
+    margin-top: 0.5rem;
 }
 .blue-background {
     background-color: #0f90ce;
-    padding: 4rem 10rem 4rem 0;
-    min-height: 45vh;
+    padding: 4rem 12rem 4rem 0;
+    height: 50vh;
 }
 .impact-main {
   margin-top: 8rem;
+  margin-bottom: 40rem;
 }
 h2.impact-title{
-  font-size: 4.5rem;
+  font-size: 4.6rem;
   font-weight: 700;
   text-align: right;
-  padding-right: 15%;
+  padding-right: 10%;
+  text-shadow: none;
+  margin-bottom: -0.8rem;
 }
 .impact-inner {
   width: 50%;
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .impact-text {
-  background-color: #f0f1f5;
+  background-color: white;
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   font-size: 3rem;
-  padding: 3rem;
+  height: 100%;
+  line-height: 2.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 900px) {
     .impact-title {
@@ -246,10 +259,11 @@ h2.impact-title{
   }
 }
 .impact-desc {
-        margin-left: 0;
         text-align: center;
-        font-size: 2rem;
-    }
+        font-size: 53%;
+        margin-top: 0;
+        margin-bottom: 0;
+ }
 .intro-background-mastered,
 .intro-background-tailored {
   min-height: 110vh !important;
