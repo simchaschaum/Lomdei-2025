@@ -36,14 +36,14 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
   .mastered-main#platform-intro {
     padding-bottom: 2.5rem;
   }
-  .intro-background-mastered{
+  /* .intro-background-mastered{
     background: url(../public/images/Mastered\ background\ pic.png) no-repeat center center;
     background-size: 100% 100%;
   }
   .intro-background-tailored{
     background: url(../public/images/Tailored\ background\ pic.png) no-repeat center center;
     background-size: 100% 400%;
-  }
+  } */
   .mastered-features {
     width: 50%;
     box-sizing: border-box;
@@ -170,14 +170,14 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
     position: relative;
     margin-top: 0;
   }
-  #platform-intro {
-    background: url('../public/images/Lomdei Home page background.png') no-repeat center center;
-    background-size: 100% 100%;
-  }
   .mastered-main {
     background: url(../public/images/left-border-mastered-tailored.png);
     height: 60vh;
   }
+}
+#platform-intro {
+  background: url('../public/images/Lomdei Home page background.png') no-repeat center center;
+  background-size: 100% 100%;
 }
 .page-container.mastered-page {
   min-height: 100vh;
