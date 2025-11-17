@@ -265,28 +265,37 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  width: 90%;
-  max-width: 1400px;
+  width: 100%;
+  /* Ensure container can hold the full track including scaled middle box */
+  max-width: calc(3 * 24rem + 2 * 10rem + 6rem);
+  overflow: visible;
 }
 
 .carousel-track-wrapper {
   overflow-y: visible;
-  overflow-x: hidden;
-  width: calc(3 * 18rem + 2 * 10rem);
-  max-width: 100%;
+  overflow-x: visible;
+  width: 100%;
+  max-width: calc(3 * 24rem + 2 * 10rem + 6rem);
   padding-top: 2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .carousel-track {
   display: flex;
+  justify-content: center;
   gap: 10rem;
   transition: transform 0.5s ease;
+  /* Add extra space for the scaled middle box + safety buffer (total extra = 14rem) */
+  width: calc(3 * 24rem + 2 * 10rem + 14rem);
+  margin: 0 auto;
 }
 
 .review-box {
-  min-width: 18rem;
-  width: 18rem;
-  height: 18rem;
+  min-width: 24rem;
+  width: 24rem;
+  height: 24rem;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 0.5rem;
   border: 0.5px solid #777777;
@@ -357,12 +366,16 @@
 
 @media (max-width: 1200px) {
   .review-box {
-    min-width: 18rem;
-    width: 18rem;
-    height: 18rem;
+    min-width: 24rem;
+    width: 24rem;
+    height: 24rem;
   }
   .carousel-track-wrapper {
-    width: calc(3 * 18rem + 2 * 2rem);
+    width: calc(3 * 24rem + 2 * 10rem);
+    max-width: calc(3 * 24rem + 2 * 10rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
 }
 

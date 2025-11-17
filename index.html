@@ -271,8 +271,8 @@
       if (!track || !dots.length) return;
       
       const reviews = document.querySelectorAll('.review-box');
-      const reviewWidth = 20; // rem
-      const gap = 2; // rem
+      const reviewWidth = 24; // rem
+      const gap = 10; // rem (matches CSS gap)
       const moveAmount = reviewWidth + gap; // Total width including gap
       
       let currentIndex = 0;
@@ -291,15 +291,24 @@
           }
         });
         
-        // Update middle review (scale up)
-        reviews.forEach((review, index) => {
-          review.classList.remove('middle');
+        // Update middle review (scale up) — choose the visually centered item
+        reviews.forEach((review) => review.classList.remove('middle'));
+        // Determine which review's center is nearest the carousel wrapper center
+        const wrapper = track.parentElement; // .carousel-track-wrapper
+        const wrapperRect = wrapper.getBoundingClientRect();
+        const wrapperCenterX = wrapperRect.left + wrapperRect.width / 2;
+        let closestIdx = 0;
+        let closestDist = Infinity;
+        reviews.forEach((review, idx) => {
+          const r = review.getBoundingClientRect();
+          const rCenter = r.left + r.width / 2;
+          const dist = Math.abs(rCenter - wrapperCenterX);
+          if (dist < closestDist) {
+            closestDist = dist;
+            closestIdx = idx;
+          }
         });
-        // The middle visible review is at currentIndex + 1
-        const middleIndex = currentIndex + 1;
-        if (middleIndex >= 0 && middleIndex < reviews.length) {
-          reviews[middleIndex].classList.add('middle');
-        }
+        if (reviews[closestIdx]) reviews[closestIdx].classList.add('middle');
       }
       
       // Add click handlers to dots
