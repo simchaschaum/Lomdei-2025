@@ -1,16 +1,360 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/images/New Lomdei Logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lomdei</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lomdei</title>
+  <link rel="icon" type="image/svg+xml" href="./public/images/New Lomdei Logo.png" />
+  <link rel="stylesheet" href="./App.css">
+  <link rel="stylesheet" href="./Header.css">
+  <link rel="stylesheet" href="./Footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header"></div>
+  <div class="page-container">
+    <div class="landing-title-container">
+      <div class="main-logo">
+      <img src="./public/images/New Lomdei Logo.png" alt="Lomdei Logo" class="lomdei-logo" />
+        <h1>
+          Lomdei bridges tradition and innovation, empowering<br />
+          educators to create personalized Jewish learning<br />
+          experiences accessible to all students.</h1>
+      </div>
+    </div>
+    <div class="white-section">
+      <div class="white-section-content">
+        <h2 class="programs-title">OUR PROGRAMS</h2>
+        <div class="programs-grid">
+          <a class="program-square" href="./pages/mastered.html">
+            <div class="program-title">MasterED</div>
+            <div class="program-icon">
+              <span style="font-size: 4rem;">
+                <img src="./public/images/MasterEd-Icon.PNG" alt="MasterEd Book Icon" />
+              </span>
+            </div>
+            <div class="program-desc">Powerful <b>platform</b>, seamlessly simple.</div>
+          </a>
+          <a class="program-square" href="./pages/tailored.html">
+            <div class="program-title">TailorED</div>
+            <div class="program-icon">
+              <span style="font-size: 4rem;">
+                <img src="./public/images/TailorEd-Icon.PNG" alt="TailorED Lightbulb Icon" />
+              </span>
+            </div>
+            <div class="program-desc">Customized <b>coaching</b>, transformative teaching.</div>
+          </a>
+          <a class="program-square disabled" tabindex="-1">
+            <div class="program-title">StandardED</div>
+            <div class="program-icon">
+              <span style="font-size: 4rem;">
+                <img src="./public/images/StandardEd-Icon.PNG" alt="StandardED Star Icon" />
+              </span>
+            </div>
+            <div class="program-desc">Coming soon!</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="lower-section">
+    <div class="transparent-section">
+      <h2 class="programs-title"  id="titleDollars"><img src="./public/images/government-icon.png" alt="Government Grants Icon" />GOVERNMENT GRANTS</h2>
+        <div class="government-grants-content">
+          <div class="grants-boxes">
+            <div class="grant-box">
+              <img class="star-icon" alt="star-icon" src="./public/images/star-icon.png" />
+              <h4>Title IIA Funding</h4>
+              <p>Federal grants available for professional development and educational coaching programs.</p>
+              <ul>
+                <li>Title IIA dollars can be used towards professional development &amp; coaching and for the MasterED Learning Platform</li>
+              </ul>
+            </div>
+            <div class="grant-box">
+              <img class="star-icon" alt="star-icon" src="./public/images/star-icon.png" />
+              <h4>Title IV Funding</h4>
+              <p>Federal grants specifically designated for educational software and technology solutions.</p>
+              <ul>
+                <li>Title IV dollars (Software) can be used towards the Lomdei Learning Platform</li>
+              </ul>
+            </div>
+          </div>
+          <a class="contact-box" href="./pages/contact.html"><b>Contact</b> us for <br/>more information.</a>
+        </div>
+      </div>
+      <div class="global-impact-section">
+        <h2 class="programs-title"><img src="./public/images/globe-icon.png" alt="Global Impact Icon" />GLOBAL IMPACT</h2>
+        <div class="global-impact-content">
+          <p class="impact-subtitle">See Lomdei's reach across the world.</p>
+          <div class="impact-counters">
+            <div class="counter"><span class="counter-number">074</span> <span class="counter-label">schools</span></div>
+            <div class="counter"><span class="counter-number">300</span> <span class="counter-label">teachers</span></div>
+            <div class="counter"><span class="counter-number">8500</span> <span class="counter-label">students</span></div>
+          </div>
+          <div class="reviews-carousel">
+            <div class="carousel-container">
+              <div class="carousel-track-wrapper">
+                <div class="carousel-track">
+                  <div class="review-box">
+                    <p>"Lomdei’s <b>TailorED</b> program has delivered meaningful, measurable improvements in our teachers’ instruction."</p>
+                    <div>
+                      <span class="reviewer">Mrs Malissa Truelove,<br/>Principal, Torat Emet Houston</span>
+                    </div>
+                  </div>
+                  <div class="review-box">
+                    <p>"Lomdei’s <b>TailorED</b> program offers an effective solution for both novice and seasoned teachers through expert, hashkafically aligned coaching."</p>
+                    <div>
+                      <span class="reviewer">Mr Richard Altabe<br/>Principal, HALB</span>
+                    </div>
+                  </div>
+                  <div class="review-box">
+                    <p>"Our teachers have been able to deliver more targeted, individualized learning experiences thanks to Lomdei’s <b>MasterED</b> platform."</p>
+                    <div>
+                      <span class="reviewer">Mrs Odelia Donishefsky<br/>Principal, Moriah School</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-dots">
+                <button disabled class="dot" data-index="0" aria-label="Go to reviews 1-3"></button>
+                <button disabled class="dot" data-index="1" aria-label="Go to reviews 2-4"></button>
+                <button disabled class="dot" data-index="2" aria-label="Go to reviews 3-5"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="partner-schools-section">
+        <h2 class="partner-title"><img src="./public/images/partner-schools-icon.png" alt="Partner Schools Icon" />PARTNER SCHOOLS</h2>
+        <div class="partner-schools-flex">
+          <a class="contact-box" href="./pages/contact.html"><b>Contact</b> us for <br/>more information.</a>
+          <div class="list-box">
+          <h6>Explore Lomdei’s growing list of schools being serviced.</h6>
+          <div class="white-box">
+            <p>Hear from teachers and school leaders whose students are already benefiting from Lomdei.</p>
+          </div>
+          <img src="./public/images/Lomdei-Schools-thumbnail.jpg" alt="Lomdei Schools Thumbnail" class="schools-thumbnail" />
+  <!-- Modal for thumbnail image -->
+  <div id="thumbnailModal">
+    <div id="modalContent" class="modal-content">
+      <img src="./public/images/Lomdei-Schools.png" alt="Lomdei Schools Thumbnail" class="modal-image" />
+      <button id="closeModalBtn" class="close-modal-btn">&times;</button>
+    </div>
+   </div>
+          </div>
+        </div>
+        <div class="map-box">
+          <img src="./public/images/Lomdei-map.png" alt="Lomdei Schools Map" class="schools-map" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+  <script>
+    // Dynamically load header and footer HTML
+    function importSection(id, url, selector) {
+      fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          // Extract only the relevant tag (header/footer) from the HTML file
+          const temp = document.createElement('div');
+          temp.innerHTML = html;
+          const el = temp.querySelector(selector);
+          if (el) document.getElementById(id).appendChild(el);
+        });
+    }
+
+    importSection('header', './home-header.html', 'header');
+    importSection('footer', './home-footer.html', 'footer');
+
+    // Hamburger menu logic for dynamically loaded header
+    function setupHamburgerMenu() {
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (hamburgerBtn && mobileMenu) {
+        hamburgerBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          mobileMenu.classList.toggle('open');
+          hamburgerBtn.setAttribute('aria-expanded', mobileMenu.classList.contains('open'));
+        });
+        // Close menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+          });
+        });
+        // Optional: close menu on outside click
+        document.addEventListener('click', function(e) {
+          if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+            mobileMenu.classList.remove('open');
+          }
+        });
+      }
+    }
+    // Wait for header to be loaded before setting up hamburger
+    function waitForHeaderAndSetup() {
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      if (hamburgerBtn) {
+        setupHamburgerMenu();
+      } else {
+        setTimeout(waitForHeaderAndSetup, 50);
+      }
+    }
+    waitForHeaderAndSetup();
+
+    // Modal logic for thumbnail image
+    document.addEventListener('DOMContentLoaded', function() {
+      var thumbnail = document.querySelector('.schools-thumbnail');
+      var modal = document.getElementById('thumbnailModal');
+      var closeBtn = document.getElementById('closeModalBtn');
+      var modalContent = document.getElementById('modalContent');
+      if (thumbnail && modal && closeBtn && modalContent) {
+        thumbnail.addEventListener('click', function(e) {
+          modal.style.display = 'flex';
+        });
+        closeBtn.addEventListener('click', function(e) {
+          modal.style.display = 'none';
+        });
+        modal.addEventListener('click', function(e) {
+          if (!modalContent.contains(e.target)) {
+            modal.style.display = 'none';
+          }
+        });
+      }
+    });
+
+    // Counter animation on scroll into view
+    function animateCounter(element, end) {
+      let start = 0;
+      const duration = 1200;
+      const startTime = performance.now();
+      function update(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        let next = Math.floor(progress * end);
+        // Optionally round to nearest 5 for effect
+        next = Math.ceil(next / 5) * 5;
+        if (next > end) next = end;
+        element.textContent = String(next).padStart(String(end).length, '0');
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          element.textContent = String(end).padStart(String(end).length, '0');
+        }
+      }
+      requestAnimationFrame(update);
+    }
+
+    let countersAnimated = false;
+    function handleScroll() {
+      if (countersAnimated) return;
+      const counters = document.querySelectorAll('.counter-number');
+      if (!counters.length) return;
+      const firstCounter = counters[0];
+      const rect = firstCounter.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        countersAnimated = true;
+        animateCounter(counters[0], 74);
+        animateCounter(counters[1], 300);
+        animateCounter(counters[2], 8500);
+      }
+    }
+    window.addEventListener('scroll', handleScroll);
+    // In case already in view on load
+    window.addEventListener('DOMContentLoaded', handleScroll);
+
+    // Carousel functionality (responsive: 3 / 2 / 1 items)
+    document.addEventListener('DOMContentLoaded', function() {
+      const track = document.querySelector('.carousel-track');
+      const dotsContainer = document.querySelector('.carousel-dots');
+      const carouselContainer = document.querySelector('.reviews-carousel');
+      if (!track || !dotsContainer || !carouselContainer) return;
+
+      const reviews = Array.from(document.querySelectorAll('.review-box'));
+      const reviewWidth = 24; // rem (base)
+      const gap = 10; // rem
+
+      let currentIndex = 0;
+
+      function visibleCount() {
+        if (window.innerWidth < 900) return 1;
+        if (window.innerWidth < 1400) return 2;
+        return 3;
+      }
+
+      function buildDots(count) {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < count; i++) {
+          const btn = document.createElement('button');
+          btn.className = 'dot';
+          btn.setAttribute('data-index', String(i));
+          btn.setAttribute('aria-label', `Go to reviews ${i+1}-${i+count}`);
+          btn.addEventListener('click', function() {
+            currentIndex = i;
+            updateCarousel();
+          });
+          dotsContainer.appendChild(btn);
+        }
+      }
+
+      function updateCarousel() {
+        const v = visibleCount();
+        const maxIndex = Math.max(0, reviews.length - v);
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+        // Calculate slide width (element width + gap) in pixels using DOM
+        const first = reviews[0];
+        if (!first) return;
+        const rRect = first.getBoundingClientRect();
+        // Find gap between first and second (if exists)
+        let gapPx = 0;
+        if (reviews[1]) {
+          const r2Rect = reviews[1].getBoundingClientRect();
+          gapPx = r2Rect.left - (rRect.left + rRect.width);
+          if (gapPx < 0) gapPx = 0;
+        } else {
+          // fallback to CSS gap approx in px (rem->px)
+          const rootFont = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+          gapPx = gap * rootFont;
+        }
+
+        const slideWidthPx = rRect.width + gapPx;
+        const offsetPx = currentIndex * slideWidthPx;
+        track.style.transform = `translateX(-${offsetPx}px)`;
+
+        // Rebuild dots if needed
+        const expectedDots = maxIndex + 1;
+        if (dotsContainer.children.length !== expectedDots) buildDots(expectedDots);
+
+        Array.from(dotsContainer.children).forEach((dot, idx) => {
+          dot.classList.toggle('active', idx === currentIndex);
+        });
+
+        // Ensure mid element is visually centered
+        reviews.forEach((r) => r.classList.remove('middle'));
+        const wrapper = track.parentElement;
+        const wrapperRect = wrapper.getBoundingClientRect();
+        const wrapperCenterX = wrapperRect.left + wrapperRect.width / 2;
+        let closestIdx = 0;
+        let closestDist = Infinity;
+        reviews.forEach((review, idx) => {
+          const r = review.getBoundingClientRect();
+          const rCenter = r.left + r.width / 2;
+          const dist = Math.abs(rCenter - wrapperCenterX);
+          if (dist < closestDist) { closestDist = dist; closestIdx = idx; }
+        });
+        if (reviews[closestIdx]) reviews[closestIdx].classList.add('middle');
+
+        carouselContainer.classList.toggle('single-view', v === 1);
+      }
+
+      // Handle resize (debounced)
+      let rt;
+      window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(updateCarousel, 120); });
+
+      // Initialize
+      updateCarousel();
+    });
+  </script>
+</body>
 </html>

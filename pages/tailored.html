@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lomdei - TailorED</title>
+  <link rel="icon" type="image/svg+xml" href="../public/images/New Lomdei Logo.png" />
+  <link rel="stylesheet" href="./mastered-tailored.css">
+  <link rel="stylesheet" href="../Header.css">
+  <link rel="stylesheet" href="../Footer.css">
+
+</head>
+<body>
+  <div id="header"></div>
+  <div class="page-container mastered-page">
+    <main class="mastered-main intro-background-tailored" id="platform-intro">
+      <div class="mastered-content">
+        <h1 class="mastered-title" id="mastered-h1-title">TailorED</h1>
+        <h3 class="mastered-subtitle">Customized coaching, transformative teaching</h3>
+        <p class="mastered-desc">Lomdei’s professional development and coaching empowers educators to create <b>personalized</b> Jewish learning experiences with or without the use of technology, <b>accessible</b> to all students. We tailor to curricular needs and values of Jewish day schools and yeshivos.</p>
+      </div>
+    </main>
+    <main class="mastered-main" id="platform-features">
+      <div class="mastered-features">
+        <h2 class="mastered-subtitle features-subtitle">PROGRAM FEATURES</h2>
+        <ul class="features-list">
+          <li class="feature-item">
+            <img class="feature-icon" src="../public/images/arrow-icon.png" alt="icon" />
+            <span class="feature-text">
+              <span class="feature-title"><b>RELEVANT INSTRUCTIONAL MODELS</b></span>
+              <span class="feature-desc">Delivering innovative teaching strategies in a culturally<br/>sensitive and relevant way to Jewish schools.</span>
+            </span>
+          </li>
+          <li class="feature-item">
+            <img class="feature-icon" src="../public/images/check-icon.png" alt="icon" />
+            <span class="feature-text">
+              <span class="feature-title"><b>NURTURING PROFESSIONAL EXCELLENCE</b></span>
+              <span class="feature-desc">Providing schools with a guided framework to<br/>effectively createan ongoing growth minded culture<br/>in professional development and coaching.</span>
+            </span>
+          </li>
+          <li class="feature-item">
+            <img class="feature-icon" src="../public/images/handshake-icon.png" alt="icon" />
+            <span class="feature-text">
+              <span class="feature-title"><b>STRATEGIC COACHING PARTNERSHIPS</b></span>
+              <span class="feature-desc">Matching our diverse team of coaches with<br/>teachers to maximize success.</span>
+            </span>
+          </li>
+          <li class="feature-item">
+            <img class="feature-icon" src="../public/images/graduate-icon.png" alt="icon" />
+            <span class="feature-text">
+              <span class="feature-title"><b>REACHING EVERY CHILD</b></span>
+              <span class="feature-desc">Unlocking sustained instructional models in schools<br/>believing in “teach to reach every child.”</span>
+            </span>
+          </li>
+          <li class="feature-item">
+            <img class="feature-icon" src="../public/images/bullseye-icon.png" alt="icon" />
+            <span class="feature-text">
+              <span class="feature-title"><b>COLLABORATIVE GOAL SETTING</b></span>
+              <span class="feature-desc">Facilitating a professional partnership with school leadership<br/>and teachers to create clearly defined and achievable goals.</span>
+            </span>
+          </li>
+          <li class="feature-item">
+            <img class="feature-icon" src="../public/images/learning-together-icon.png" alt="icon" />
+            <span class="feature-text">
+              <span class="feature-title"><b>LEARNING TOGETHER</b></span>
+              <span class="feature-desc">Creating a professional learning community of like minded<br/>educators who will share, learn and collaborate.</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <main class="impact-main">
+        <div class="impact-content">
+          <h2 class="impact-title mastered-subtitle">PROGRAM IMPACT</h2>
+          <div class='blue-background'>
+            <div class='impact-text'>
+              <div class="impact-inner">
+                <p class="impact-desc">High Level of <b>Engagement</b></p>
+                <p class="impact-desc">Teacher Achievement and <b>Satisfaction</b></p>
+                <p class="impact-desc">Fulfillment and <b>Accomplishment</b> in the Learning Process</p>
+                <p class="impact-desc">Successful <b>Student Centered</b> Learning</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <main class="review">
+        <div class="review-box">
+          <p>"Lomdei’s <b>TailorED</b> program has delivered meaningful, measurable improvements in our teachers’ instruction."</p>
+          <div>
+            <span class="reviewer">Mrs Malissa Truelove,<br/>Principal, Torat Emet Houston</span>
+          </div>
+        </div>
+      </main>
+  </div>
+  <div id="footer"></div>
+  <script>
+    // Dynamically load header and footer HTML
+    function importSection(id, url, selector) {
+      fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const temp = document.createElement('div');
+          temp.innerHTML = html;
+          const el = temp.querySelector(selector);
+          if (el) document.getElementById(id).appendChild(el);
+        });
+    }
+  importSection('header',  '../header.html', 'header');
+  importSection('footer', '../footer.html', 'footer');
+
+    // Hamburger menu logic for dynamically loaded header
+    function setupHamburgerMenu() {
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (hamburgerBtn && mobileMenu) {
+        hamburgerBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          mobileMenu.classList.toggle('open');
+          hamburgerBtn.setAttribute('aria-expanded', mobileMenu.classList.contains('open'));
+        });
+        // Close menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+          });
+        });
+        // Optional: close menu on outside click
+        document.addEventListener('click', function(e) {
+          if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+            mobileMenu.classList.remove('open');
+          }
+        });
+      }
+    }
+    // Wait for header to be loaded before setting up hamburger
+    function waitForHeaderAndSetup() {
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      if (hamburgerBtn) {
+        setupHamburgerMenu();
+      } else {
+        setTimeout(waitForHeaderAndSetup, 50);
+      }
+    }
+    waitForHeaderAndSetup();
+  </script>
+</body>
+</html>

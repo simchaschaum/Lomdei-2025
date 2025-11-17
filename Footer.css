@@ -1,7 +1,17 @@
+.footer-link {
+  color: #111;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #444;
+  text-decoration: none;
+}
 .site-footer {
   width: 100vw;
-  min-height: 14rem;
-  background: #9bc4d9;
+  min-height: 12rem;
+  background: #c6d8e2;
   margin: 0;
   padding: 2rem;
   box-sizing: border-box;
@@ -9,6 +19,9 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 .footer-columns {
@@ -27,15 +40,9 @@
 }
 
 .footer-logo {
-  max-height: calc(8.75rem / 1.25);
+  height: 4rem;
   width: auto;
   margin-bottom: 1rem;
-}
-
-.footer-text {
-  color: #000;
-  font-size: 1rem;
-  text-align: left;
 }
 
 .left-col {
@@ -60,14 +67,8 @@
   gap: 0.5rem;
 }
 
-.footer-center-text {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 1rem 0;
-}
-
 .footer-center-logo {
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,10 +76,13 @@
 }
 
 .footer-partner-logo {
-  max-width: 100%;
-  max-height: 10rem;
+  max-width: 90%;
+  max-height: 8rem;
   object-fit: contain;
   margin: 0 auto;
+}
+.footer-partner-logo#deep-logo {
+  max-width: 40%;
 }
 
 .right-col {
@@ -105,14 +109,7 @@
   justify-content: flex-start;
 }
 
-.footer-link {
-  color: #000;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 500;
-  transition: color 0.2s;
-}
+
 
 .footer-link:hover {
   color: #0077a3;

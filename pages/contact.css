@@ -1,33 +1,34 @@
-.mastered-page {
+.contact-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-.mastered-main {
-  margin-top: 9rem;
+.contact-main {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#platform-intro {
-  background: url('/images/Lomdei Background 2.png') no-repeat center center;
+main.contact-main {
+  padding: 50px;
+  height: auto;
+  min-height: unset;
+  align-items: flex-start;
+}
+#contact-intro {
+  background: url('.public/images/Lomdei Background 2.png') no-repeat center center;
   background-size: 100% 100%;
-  min-height: 100vh;
+  min-height: 25vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#platform-features.mastered-main {
-  margin-top: 0;
-  padding-top: 4rem;
-  background: none;
-  position: relative;
-  top: 0;
-  z-index: 1;
+#contact-form.contact-form-main {
+  /* padding: 100px; */
+  min-height: 1000px;
 }
-.mastered-content {
+.contact-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,109 +38,70 @@
   position: relative;
   bottom: 20%;
 }
-.mastered-title {
+.contact-title {
   font-family: 'Glacial Indifference', Arial, sans-serif;
   font-size: 6.94rem; /* 111pt = 6.94rem */
-  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.075);
   margin-bottom: 2rem;
 }
-.mastered-subtitle {
+.contact-subtitle {
   font-family: 'TT Wellingtons', Arial, sans-serif;
   font-size: 2.19rem; /* 35pt = 2.19rem */
   margin-bottom: 1.5rem;
 }
-.mastered-desc {
+.contact-desc {
   font-size: 1.225rem; /* 19.6pt = 1.225rem */
   margin-bottom: 0;
 }
-.features-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.feature-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
-}
-.feature-icon {
-  width: 100px;
-  height: auto;
-  margin-right: 1rem;
-  vertical-align: middle;
-}
-.feature-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.feature-desc {
-  text-align: left;
-}
 
 @media (max-width: 600px) {
-  .mastered-page,
-  .page-container.mastered-page {
+  .contact-page,
+  .page-container.contact-page {
     display: block;
     min-height: unset;
     height: auto;
     width: 100%;
   }
-  .mastered-main {
+  .contact-main {
     margin-top: 6rem;
     height: auto;
     min-height: unset;
     background-size: cover;
     width: 100%;
   }
-  .mastered-content {
+  .contact-content {
     width: 95%;
   }
-  .mastered-title {
+  .contact-title {
     font-size: 2.8rem;
   }
-  .mastered-subtitle{
+  .contact-subtitle{
     font-size: 1.2rem;
   }
-  .mastered-desc {
+  .contact-desc {
     font-size: 1rem;
   }
   .site-footer {
     position: relative;
     margin-top: 0;
   }
-  #platform-intro {
-    background: url('/images/Lomdei Background 2.png') no-repeat center center;
+  #contact-intro {
+  background: url('.public/images/Lomdei Background 2.png') no-repeat center center;
     background-size: 100% 100%;
   }
-  .mastered-main {
+  .contact-main {
     background: none;
   }
 }
-@media (max-width: 1200px) {
-  .mastered-content {
-    margin-top: 9rem !important;
-  }
-}
-@media (max-width: 1200px) {
-  #platform-features.mastered-main {
-    margin-top: 0 !important;
-    padding-top: 9rem !important;
-    background: none;
-    position: relative;
-    top: 0;
-    z-index: 1;
-  }
-}
-#platform-features {
+#contact-form {
     background-color: #f0f1f5;
 }
-.page-container.mastered-page {
+.page-container.contact-page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-.page-container.mastered-page > main {
+.page-container.contact-page > main {
   flex-shrink: 0;
 }
 .site-footer {
@@ -154,9 +116,29 @@
   justify-content: center;
   position: relative;
 }
-.feature-title {
-    font-size: 18pt;
-}
-.feature-desc, .impact-desc {
+.contact-desc, .impact-desc {
     font-size: 16pt;
+}
+.contact-form-main iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio, adjust as needed */
+  height: 0;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
