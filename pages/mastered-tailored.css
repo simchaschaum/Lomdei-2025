@@ -222,7 +222,7 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
 }
 .impact-main {
   margin-top: 8rem;
-  margin-bottom: 40rem;
+  margin-bottom: 25rem;
 }
 h2.impact-title{
   font-size: 4.6rem;
@@ -268,6 +268,46 @@ h2.impact-title{
 .intro-background-tailored {
   min-height: 110vh !important;
   height: auto !important;
+}
+.review{
+  background-color: #dcf5fb;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Match homepage review-box styles but make boxes wide for this page */
+.review .review-box {
+  min-width: 60vw;
+  width: min(90vw, 80%);
+  max-width: 90vw;
+  height: 40vh;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 0.5rem;
+  border: 0.5px solid #777777;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  margin: 4rem auto; /* center and give vertical spacing */
+  transition: transform 0.5s ease, height 0.5s ease;
+}
+.review .review-box p {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #222;
+  margin: 0;
+}
+.review .review-box .reviewer {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #298dc8;
+  margin-top: 3rem;
 }
 html, body {
   width: 100%;
