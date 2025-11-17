@@ -97,19 +97,19 @@
               <div class="carousel-track-wrapper">
                 <div class="carousel-track">
                   <div class="review-box">
-                    <p>"Lomdei’s TailorED program has delivered meaningful, measurable improvements in our teachers’ instruction."</p>
+                    <p>"Lomdei’s <b>TailorED</b> program has delivered meaningful, measurable improvements in our teachers’ instruction."</p>
                     <div>
                       <span class="reviewer">Mrs Malissa Truelove,<br/>Principal, Torat Emet Houston</span>
                     </div>
                   </div>
                   <div class="review-box">
-                    <p>"Lomdei’s TailorED program offers an effective solution for both novice and seasoned teachers through expert, hashkafically aligned coaching."</p>
+                    <p>"Lomdei’s <b>TailorED</b> program offers an effective solution for both novice and seasoned teachers through expert, hashkafically aligned coaching."</p>
                     <div>
                       <span class="reviewer">Mr Richard Altabe<br/>Principal, HALB</span>
                     </div>
                   </div>
                   <div class="review-box">
-                    <p>"Our teachers have been able to deliver more targeted, individualized learning experiences thanks to Lomdei’s MasterED platform."</p>
+                    <p>"Our teachers have been able to deliver more targeted, individualized learning experiences thanks to Lomdei’s <b>MasterED</b> platform."</p>
                     <div>
                       <span class="reviewer">Mrs Odelia Donishefsky<br/>Principal, Moriah School</span>
                     </div>
@@ -263,38 +263,76 @@
     // In case already in view on load
     window.addEventListener('DOMContentLoaded', handleScroll);
 
-    // Carousel functionality
+    // Carousel functionality (responsive: 3 / 2 / 1 items)
     document.addEventListener('DOMContentLoaded', function() {
       const track = document.querySelector('.carousel-track');
-      const dots = document.querySelectorAll('.dot');
-      
-      if (!track || !dots.length) return;
-      
-      const reviews = document.querySelectorAll('.review-box');
-      const reviewWidth = 24; // rem
-      const gap = 10; // rem (matches CSS gap)
-      const moveAmount = reviewWidth + gap; // Total width including gap
-      
+      const dotsContainer = document.querySelector('.carousel-dots');
+      const carouselContainer = document.querySelector('.reviews-carousel');
+      if (!track || !dotsContainer || !carouselContainer) return;
+
+      const reviews = Array.from(document.querySelectorAll('.review-box'));
+      const reviewWidth = 24; // rem (base)
+      const gap = 10; // rem
+
       let currentIndex = 0;
-      const maxIndex = reviews.length - 3; // Show 3 at a time
-      
+
+      function visibleCount() {
+        if (window.innerWidth < 900) return 1;
+        if (window.innerWidth < 1400) return 2;
+        return 3;
+      }
+
+      function buildDots(count) {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < count; i++) {
+          const btn = document.createElement('button');
+          btn.className = 'dot';
+          btn.setAttribute('data-index', String(i));
+          btn.setAttribute('aria-label', `Go to reviews ${i+1}-${i+count}`);
+          btn.addEventListener('click', function() {
+            currentIndex = i;
+            updateCarousel();
+          });
+          dotsContainer.appendChild(btn);
+        }
+      }
+
       function updateCarousel() {
-        const offset = currentIndex * moveAmount;
-        track.style.transform = `translateX(-${offset}rem)`;
-        
-        // Update active dot
-        dots.forEach((dot, index) => {
-          if (index === currentIndex) {
-            dot.classList.add('active');
-          } else {
-            dot.classList.remove('active');
-          }
+        const v = visibleCount();
+        const maxIndex = Math.max(0, reviews.length - v);
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+        // Calculate slide width (element width + gap) in pixels using DOM
+        const first = reviews[0];
+        if (!first) return;
+        const rRect = first.getBoundingClientRect();
+        // Find gap between first and second (if exists)
+        let gapPx = 0;
+        if (reviews[1]) {
+          const r2Rect = reviews[1].getBoundingClientRect();
+          gapPx = r2Rect.left - (rRect.left + rRect.width);
+          if (gapPx < 0) gapPx = 0;
+        } else {
+          // fallback to CSS gap approx in px (rem->px)
+          const rootFont = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+          gapPx = gap * rootFont;
+        }
+
+        const slideWidthPx = rRect.width + gapPx;
+        const offsetPx = currentIndex * slideWidthPx;
+        track.style.transform = `translateX(-${offsetPx}px)`;
+
+        // Rebuild dots if needed
+        const expectedDots = maxIndex + 1;
+        if (dotsContainer.children.length !== expectedDots) buildDots(expectedDots);
+
+        Array.from(dotsContainer.children).forEach((dot, idx) => {
+          dot.classList.toggle('active', idx === currentIndex);
         });
-        
-        // Update middle review (scale up) — choose the visually centered item
-        reviews.forEach((review) => review.classList.remove('middle'));
-        // Determine which review's center is nearest the carousel wrapper center
-        const wrapper = track.parentElement; // .carousel-track-wrapper
+
+        // Ensure mid element is visually centered
+        reviews.forEach((r) => r.classList.remove('middle'));
+        const wrapper = track.parentElement;
         const wrapperRect = wrapper.getBoundingClientRect();
         const wrapperCenterX = wrapperRect.left + wrapperRect.width / 2;
         let closestIdx = 0;
@@ -303,22 +341,17 @@
           const r = review.getBoundingClientRect();
           const rCenter = r.left + r.width / 2;
           const dist = Math.abs(rCenter - wrapperCenterX);
-          if (dist < closestDist) {
-            closestDist = dist;
-            closestIdx = idx;
-          }
+          if (dist < closestDist) { closestDist = dist; closestIdx = idx; }
         });
         if (reviews[closestIdx]) reviews[closestIdx].classList.add('middle');
+
+        carouselContainer.classList.toggle('single-view', v === 1);
       }
-      
-      // Add click handlers to dots
-      dots.forEach((dot, index) => {
-        dot.addEventListener('click', function() {
-          currentIndex = index;
-          updateCarousel();
-        });
-      });
-      
+
+      // Handle resize (debounced)
+      let rt;
+      window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(updateCarousel, 120); });
+
       // Initialize
       updateCarousel();
     });

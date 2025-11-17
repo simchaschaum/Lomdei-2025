@@ -251,8 +251,9 @@
   margin: 4rem 0;
 }
 .reviews-carousel {
-  background: url('./public/images/Global-impact-Background.png') no-repeat center center;
-  background-size: 100% auto;
+  /* background: url('./public/images/Global-impact-Background.png') no-repeat center center;
+  background-size: 100% auto; */
+  background-color: #cedeecbe;
   min-height: 45vh;
   padding: 3rem 0;
   display: flex;
@@ -379,6 +380,36 @@
   }
 }
 
+/* Two-column view: 1000 - 1399px */
+@media (min-width: 1000px) and (max-width: 1399px) {
+  .review-box {
+    min-width: 18rem;
+    width: 18rem;
+    height: 18rem;
+    padding: 1.25rem;
+  }
+  .review-box p { font-size: 0.95rem; }
+  .review-box .reviewer { font-size: 0.85rem; }
+  .carousel-track { gap: 6rem; }
+  .carousel-track-wrapper { max-width: calc(2 * 18rem + 1 * 6rem + 14rem); }
+}
+
+/* Single view: <1000px */
+@media (max-width: 999px) {
+  /* Keep boxes narrow on small screens (consistent with <768 rules) */
+  .review-box {
+    min-width: 16rem;
+    width: 16rem;
+    height: 16rem;
+    padding: 1.5rem;
+  }
+  .review-box p { font-size: 0.95rem; line-height: 1.4; }
+  .review-box .reviewer { font-size: 0.9rem; }
+  .carousel-track { gap: 2rem; width: auto; }
+  .carousel-track-wrapper { overflow-x: hidden; width: 100%; max-width: 100%; padding-top: 1rem; }
+  .carousel-dots { gap: 0.5rem; }
+}
+
 @media (max-width: 768px) {
   .carousel-container {
     width: 95%;
@@ -401,6 +432,20 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: left;
+}
+.global-impact-section{
+  background: #f0f1f5;
+}
+.global-impact-section h2{
+  margin-top: 0;
+}
+.impact-subtitle {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  margin-left: 7rem;
 }
 @media (max-width: 600px) {
   .global-impact-section {
