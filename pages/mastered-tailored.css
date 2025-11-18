@@ -218,7 +218,6 @@ body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mas
 .blue-background {
     background-color: #0f90ce;
     padding: 4rem 12rem 4rem 0;
-    height: 50vh;
 }
 .impact-main {
   margin-top: 8rem;
@@ -260,9 +259,10 @@ h2.impact-title{
 }
 .impact-desc {
         text-align: center;
-        font-size: 53%;
+        font-size: 1.5rem;
         margin-top: 0;
         margin-bottom: 0;
+        line-height: 2;
  }
 .intro-background-mastered,
 .intro-background-tailored {
