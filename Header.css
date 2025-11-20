@@ -32,6 +32,7 @@ header.site-header{
 @media (max-width: 1300px) {
   .header-link {
     padding: 0 1rem;
+    font-size: 1.8rem;
   }
 }
 .header-login-button {
