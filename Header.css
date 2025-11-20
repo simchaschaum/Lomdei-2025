@@ -31,7 +31,6 @@ header.site-header{
 }
 @media (max-width: 1300px) {
   .header-link {
-    font-size: 1.1rem;
     padding: 0 1rem;
   }
 }
