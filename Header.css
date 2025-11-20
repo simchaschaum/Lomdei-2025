@@ -29,7 +29,7 @@ header.site-header{
   padding: 0 1.5rem;
   transition: color 0.2s;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
   .header-link {
     padding: 0 1rem;
     font-size: 1.8rem;
