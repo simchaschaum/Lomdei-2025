@@ -320,3 +320,10 @@ html, body {
 *::after {
   box-sizing: inherit;
 }
+
+/* Reduce all font sizes by ~30% for viewports <= 1300px */
+@media (max-width: 1350px) {
+  html {
+    font-size: 75%; /* shrink rem-based font-sizes by 30% */
+  }
+}
