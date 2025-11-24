@@ -558,7 +558,7 @@
   margin: 0 2rem;
 }
 @media(max-width: 1800px){
-  .grant-box p, ul{
+  .grant-box p, .grant-box ul{
     height: auto;
     margin-bottom: 1rem;
   }
@@ -619,7 +619,7 @@
   width: 100%;
   min-width: 180px;
   min-height: 180px;
-  height: 20rem;
+  height: 22rem;
   background: white;
   border-radius: 0.5rem;
   border: 0.5px solid #777777;
@@ -938,6 +938,11 @@ html, body {
 @media (max-width: 1350px) {
   html {
     font-size: 75%;
+  }
+}
+@media (max-width: 1150px) {
+  html {
+    font-size: 70%;
   }
 }
 
