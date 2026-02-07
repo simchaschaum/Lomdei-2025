@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body, .page-container, .mastered-main, .mastered-title, .mastered-subtitle, .mastered-desc, .features-list, .feature-item, .feature-title, .feature-desc {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  .mastered-page,
+  .page-container.mastered-page {
+    display: block;
+    min-height: unset;
+    height: auto;
+    width: 100%;
+  }
 .contact-page {
   display: flex;
   flex-direction: column;
